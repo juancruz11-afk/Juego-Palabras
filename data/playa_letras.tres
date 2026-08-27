@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="WorldData" format=3 uid="uid://cjp8jax55x88n"]
+
+[ext_resource type="Script" uid="uid://dlttxgoacwjob" path="res://data/word_bank.gd" id="1_5x0nj"]
+[ext_resource type="Script" uid="uid://dl34b6x7y8yrq" path="res://core/world_data.gd" id="2_xd8yd"]
+
+[sub_resource type="Resource" id="Resource_6qf3p"]
+script = ExtResource("1_5x0nj")
+grafia = "b / v"
+nivel = "facil"
+palabras = Array[String](["boca", "barco", "vaca", "ventana", "bebe"])
+metadata/_custom_type_script = "uid://dlttxgoacwjob"
+
+[resource]
+script = ExtResource("2_xd8yd")
+id_mundo = "playa_letras"
+nombre_mundo = "Playa de las Letras"
+ubicacion = "San Felipe"
+nombre_personaje = "Gaby"
+texto_intro = "Hola! Soy Gaby, la gaviota de la playa. Aqui en la playa hay dos letras que suenan igualitas y a veces se nos hacen bolas: la B y la V. Pero no te preocupes, yo te voy a ensenar unos trucos super faciles para saber cual usar:"
+trucos = Array[String](["1) Si antes va una M, despues casi siempre va B. Como en tambor y embudo.", "2) Si antes va una N, despues casi siempre va V. Como en invierno y convite.", "3) Las palabras que empiezan con VIVI, VICE o VILLA casi siempre se escriben con V."])
+bancos_palabras = Array[ExtResource("1_5x0nj")]([SubResource("Resource_6qf3p")])
+monedas_recompensa = 50
+skin_recompensa = "Pirata de la playa"
+metadata/_custom_type_script = "uid://dl34b6x7y8yrq"
