@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://o1y6byfqgpps"]
+
+[ext_resource type="Script" uid="uid://c1kjxcisdbe2g" path="res://core/main_menu.gd" id="1_4kqf0"]
+[ext_resource type="Texture2D" uid="uid://c5gcbw1lfkkq5" path="res://assets/Jugar.png" id="1_fqoxg"]
+
+[node name="MainMenu" type="Control" unique_id=1219943927]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 6.0
+offset_right = 2.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4kqf0")
+
+[node name="jugarButton" type="TextureButton" parent="." unique_id=810649338]
+layout_mode = 0
+offset_left = 850.00006
+offset_top = 407.00003
+offset_right = 2049.0
+offset_bottom = 1354.0
+scale = Vector2(0.17935205, 0.13844903)
+texture_normal = ExtResource("1_fqoxg")
+
+[connection signal="pressed" from="jugarButton" to="." method="_on_jugar_button_pressed"]

@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="JuegoDePalabras"
+run/main_scene="uid://o1y6byfqgpps"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://bi3xkqlbyp43"
 
 [display]
 
