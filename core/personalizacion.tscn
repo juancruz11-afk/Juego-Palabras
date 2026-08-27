@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://5d0abptphn6b"]
+
+[ext_resource type="Script" uid="uid://bokv2ctmoakkw" path="res://core/personalizacion.gd" id="1_bl2jl"]
+
+[node name="Personalizacion" type="Control" unique_id=122447174]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bl2jl")
+
+[node name="Label" type="Label" parent="." unique_id=1804989677]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 286.0
+offset_right = 671.0
+offset_bottom = 309.0
+text = "personalizacion en construccion"
+
+[node name="HomeBack" type="Button" parent="." unique_id=858075202]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 46.0
+offset_right = 146.0
+offset_bottom = 77.0
+text = "regreesar"
+
+[connection signal="pressed" from="HomeBack" to="." method="_on_regresar_button_pressed"]

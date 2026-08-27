@@ -1,17 +1,154 @@
 [gd_scene format=3 uid="uid://cqe2lyrmmeajg"]
 
+[ext_resource type="Texture2D" uid="uid://d1552tinqpym8" path="res://assets/Cuadro - Personaje.png" id="1_82s5j"]
+[ext_resource type="Script" uid="uid://6yo3ym5g2ooy" path="res://core/world_map.gd" id="1_pyrt0"]
+[ext_resource type="Texture2D" uid="uid://cgjlk2e6uv0a6" path="res://assets/Monedas.png" id="2_pyrt0"]
+[ext_resource type="Texture2D" uid="uid://cn0ru2xm1s3wk" path="res://assets/Estrellas.png" id="3_orkoo"]
+[ext_resource type="Texture2D" uid="uid://c3fgstjs3g3b8" path="res://assets/Misiones.png" id="4_yxm4n"]
+[ext_resource type="Texture2D" uid="uid://ca1o8e60h8fkv" path="res://assets/Tienda.png" id="5_dsw68"]
+[ext_resource type="Texture2D" uid="uid://b5sc8a47secgr" path="res://assets/Cambiar de cuenta.png" id="6_1vrca"]
+[ext_resource type="Texture2D" uid="uid://c5gcbw1lfkkq5" path="res://assets/Jugar.png" id="7_uhwg8"]
+[ext_resource type="Texture2D" uid="uid://b54pnv7h6mw07" path="res://assets/Nombre del Jugador.png" id="8_khrtn"]
+[ext_resource type="Texture2D" uid="uid://c2rqy3xwuvktv" path="res://assets/PERSONALIZACIÓN.png" id="9_e3xrx"]
+
 [node name="WorldMap" type="Control" unique_id=1496554072]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = 1.0
+offset_right = -2.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_pyrt0")
 
-[node name="Label" type="Label" parent="." unique_id=561609771]
+[node name="FondoPersonaje" type="TextureRect" parent="." unique_id=1520551676]
+custom_minimum_size = Vector2(20, 20)
 layout_mode = 0
-offset_left = 353.0
-offset_top = 218.0
-offset_right = 682.0
-offset_bottom = 258.0
-text = "Mapa De Mundos En Construccion"
+offset_left = -51.0
+offset_top = 157.0
+offset_right = 488.0
+offset_bottom = 696.0
+texture = ExtResource("1_82s5j")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="IconoMonedas" type="TextureRect" parent="." unique_id=298470634]
+layout_mode = 0
+offset_left = 542.0
+offset_top = 7.0
+offset_right = 1041.0
+offset_bottom = 98.0
+texture = ExtResource("2_pyrt0")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="IconoMonedas" unique_id=996633907]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.040000003
+anchor_bottom = 0.26900002
+offset_left = 207.0
+offset_top = 37.0
+offset_right = 229.04
+offset_bottom = 46.520996
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IconoEstrellas" type="TextureRect" parent="." unique_id=588412542]
+layout_mode = 0
+offset_left = 790.0
+offset_top = 12.0
+offset_right = 1222.0
+offset_bottom = 103.0
+texture = ExtResource("3_orkoo")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="IconoEstrellas" unique_id=595556702]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 33.0
+offset_right = 227.0
+offset_bottom = 70.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Misiones" type="TextureButton" parent="." unique_id=254601239]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 256.0
+offset_right = 1084.0
+offset_bottom = 390.0
+texture_normal = ExtResource("4_yxm4n")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Tienda" type="TextureButton" parent="." unique_id=775132676]
+layout_mode = 0
+offset_left = 490.0
+offset_top = 258.0
+offset_right = 759.0
+offset_bottom = 389.0
+texture_normal = ExtResource("5_dsw68")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Cambiarcuenta" type="TextureButton" parent="." unique_id=1647179001]
+layout_mode = 0
+offset_left = 486.0
+offset_top = 404.0
+offset_right = 772.0
+offset_bottom = 529.0
+texture_normal = ExtResource("6_1vrca")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="JugarM" type="TextureButton" parent="." unique_id=1951852348]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 414.0
+offset_right = 1063.0
+offset_bottom = 619.0
+texture_normal = ExtResource("7_uhwg8")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="NombreP" type="TextureRect" parent="." unique_id=1015277378]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 123.0
+offset_right = 1072.0
+offset_bottom = 234.0
+texture = ExtResource("8_khrtn")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="NombreP" unique_id=1698412545]
+layout_mode = 0
+offset_left = 147.0
+offset_top = 53.0
+offset_right = 374.0
+offset_bottom = 76.0
+text = "AMANDA LOPEZ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Personalizacion" type="TextureButton" parent="." unique_id=26953999]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 134.0
+offset_right = 164.0
+offset_bottom = 245.0
+texture_normal = ExtResource("9_e3xrx")
+ignore_texture_size = true
+stretch_mode = 5
+
+[connection signal="pressed" from="Misiones" to="." method="_on_misiones_pressed"]
+[connection signal="pressed" from="Tienda" to="." method="_on_tienda_pressed"]
+[connection signal="pressed" from="JugarM" to="." method="_on_jugar_m_pressed"]
+[connection signal="pressed" from="Personalizacion" to="." method="_on_personalizacion_pressed"]

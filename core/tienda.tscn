@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dgcqlc3ov1nw0"]
+
+[ext_resource type="Script" uid="uid://bxmjkgdelrq7j" path="res://core/tienda.gd" id="1_3d3nu"]
+
+[node name="Tienda" type="Control" unique_id=733474302]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3d3nu")
+
+[node name="Label" type="Label" parent="." unique_id=1766485592]
+layout_mode = 0
+offset_left = 451.0
+offset_top = 262.0
+offset_right = 631.0
+offset_bottom = 285.0
+text = "Tienda en construccion"
+
+[node name="HomeBack" type="Button" parent="." unique_id=1691683853]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 51.0
+offset_right = 134.0
+offset_bottom = 82.0
+text = "Regresar"
+
+[connection signal="pressed" from="HomeBack" to="." method="_on_regresar_button_pressed"]

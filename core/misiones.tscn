@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bkhbw8uyt333d"]
+
+[ext_resource type="Script" uid="uid://csds7exeerad" path="res://core/misiones.gd" id="1_x1x40"]
+
+[node name="Misiones" type="Control" unique_id=700012265]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x1x40")
+
+[node name="Label" type="Label" parent="." unique_id=1036292184]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 228.0
+offset_right = 628.0
+offset_bottom = 251.0
+text = "MISIONES EN CONSTRUCCION"
+
+[node name="HomeBack" type="Button" parent="." unique_id=690836200]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 26.0
+offset_right = 155.0
+offset_bottom = 103.0
+text = "regresar"
+
+[connection signal="pressed" from="HomeBack" to="." method="_on_regresar_button_pressed"]

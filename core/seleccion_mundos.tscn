@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dnco4j4wgwxe8"]
+
+[ext_resource type="Script" uid="uid://c8flqa7r37rru" path="res://core/seleccion_mundos.gd" id="1_2ltx8"]
+
+[node name="SelecciondeMundos" type="Control" unique_id=20264231]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2ltx8")
+
+[node name="Label" type="Label" parent="." unique_id=1181566869]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 305.0
+offset_right = 689.0
+offset_bottom = 328.0
+text = "SELECCION DE MUNDOS EN CONSTRUCCION"
+
+[node name="HomeBack" type="Button" parent="." unique_id=1133679622]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 51.0
+offset_right = 140.0
+offset_bottom = 82.0
+text = "regresar"
+
+[connection signal="pressed" from="HomeBack" to="." method="_on_regresar_button_pressed"]
