@@ -3,13 +3,153 @@
 [ext_resource type="Texture2D" uid="uid://d1552tinqpym8" path="res://assets/Cuadro - Personaje.png" id="1_82s5j"]
 [ext_resource type="Script" uid="uid://6yo3ym5g2ooy" path="res://core/world_map.gd" id="1_pyrt0"]
 [ext_resource type="Texture2D" uid="uid://cgjlk2e6uv0a6" path="res://assets/Monedas.png" id="2_pyrt0"]
+[ext_resource type="Texture2D" uid="uid://iitmpbxaklj" path="res://assets/personaje_amanda/frame_000.png" id="3_okqin"]
 [ext_resource type="Texture2D" uid="uid://cn0ru2xm1s3wk" path="res://assets/Estrellas.png" id="3_orkoo"]
+[ext_resource type="Texture2D" uid="uid://bti1fpn2quaay" path="res://assets/personaje_amanda/frame_001.png" id="4_iwp0s"]
 [ext_resource type="Texture2D" uid="uid://c3fgstjs3g3b8" path="res://assets/Misiones.png" id="4_yxm4n"]
 [ext_resource type="Texture2D" uid="uid://ca1o8e60h8fkv" path="res://assets/Tienda.png" id="5_dsw68"]
+[ext_resource type="Texture2D" uid="uid://wqkyels08aad" path="res://assets/personaje_amanda/frame_002.png" id="5_pppbj"]
 [ext_resource type="Texture2D" uid="uid://b5sc8a47secgr" path="res://assets/Cambiar de cuenta.png" id="6_1vrca"]
+[ext_resource type="Texture2D" uid="uid://km03v2p7vnxv" path="res://assets/personaje_amanda/frame_003.png" id="6_ea5pv"]
+[ext_resource type="Texture2D" uid="uid://dlr6yqv1h8gtg" path="res://assets/personaje_amanda/frame_004.png" id="7_2vadp"]
 [ext_resource type="Texture2D" uid="uid://c5gcbw1lfkkq5" path="res://assets/Jugar.png" id="7_uhwg8"]
+[ext_resource type="Texture2D" uid="uid://difvu6ja37m75" path="res://assets/personaje_amanda/frame_005.png" id="8_328vq"]
 [ext_resource type="Texture2D" uid="uid://b54pnv7h6mw07" path="res://assets/Nombre del Jugador.png" id="8_khrtn"]
 [ext_resource type="Texture2D" uid="uid://c2rqy3xwuvktv" path="res://assets/PERSONALIZACIÓN.png" id="9_e3xrx"]
+[ext_resource type="Texture2D" uid="uid://dgyw2m1df0spl" path="res://assets/personaje_amanda/frame_006.png" id="9_jugwe"]
+[ext_resource type="Texture2D" uid="uid://rkqjdco64u6v" path="res://assets/personaje_amanda/frame_007.png" id="10_wu873"]
+[ext_resource type="Texture2D" uid="uid://b2vwtdhjix2mc" path="res://assets/personaje_amanda/frame_008.png" id="11_kmdk5"]
+[ext_resource type="Texture2D" uid="uid://ds4810pcs6hjh" path="res://assets/personaje_amanda/frame_009.png" id="12_52umb"]
+[ext_resource type="Texture2D" uid="uid://btvygmrojn2q8" path="res://assets/personaje_amanda/frame_010.png" id="13_j0noa"]
+[ext_resource type="Texture2D" uid="uid://cvlcsqu8awm5s" path="res://assets/personaje_amanda/frame_011.png" id="14_lyahc"]
+[ext_resource type="Texture2D" uid="uid://cegjgw7j0fh70" path="res://assets/personaje_amanda/frame_012.png" id="15_qd3ti"]
+[ext_resource type="Texture2D" uid="uid://cby4blrisb5jt" path="res://assets/personaje_amanda/frame_013.png" id="16_2hkvg"]
+[ext_resource type="Texture2D" uid="uid://dhyhdgcjv3uyv" path="res://assets/personaje_amanda/frame_014.png" id="17_v0eyq"]
+[ext_resource type="Texture2D" uid="uid://cvjmi4pxdkpx7" path="res://assets/personaje_amanda/frame_015.png" id="18_i1hrh"]
+[ext_resource type="Texture2D" uid="uid://birnlv7ohnrrb" path="res://assets/personaje_amanda/frame_016.png" id="19_6bbdv"]
+[ext_resource type="Texture2D" uid="uid://5ar06bnt32hk" path="res://assets/personaje_amanda/frame_017.png" id="20_yk8hf"]
+[ext_resource type="Texture2D" uid="uid://lbixi4nq620o" path="res://assets/personaje_amanda/frame_018.png" id="21_qmn81"]
+[ext_resource type="Texture2D" uid="uid://bu0gmrvebiooo" path="res://assets/personaje_amanda/frame_019.png" id="22_ydckh"]
+[ext_resource type="Texture2D" uid="uid://m2q6na1cnw70" path="res://assets/personaje_amanda/frame_020.png" id="23_ol3t2"]
+[ext_resource type="Texture2D" uid="uid://dffaynm7rr0lu" path="res://assets/personaje_amanda/frame_021.png" id="24_d5gea"]
+[ext_resource type="Texture2D" uid="uid://dwfk7ilk7msdu" path="res://assets/personaje_amanda/frame_022.png" id="25_fig4l"]
+[ext_resource type="Texture2D" uid="uid://dnieyds8mterv" path="res://assets/personaje_amanda/frame_023.png" id="26_x5bkm"]
+[ext_resource type="Texture2D" uid="uid://bpdhheo8c205c" path="res://assets/personaje_amanda/frame_024.png" id="27_gsuao"]
+[ext_resource type="Texture2D" uid="uid://cdvufc3phmn71" path="res://assets/personaje_amanda/frame_025.png" id="28_di56g"]
+[ext_resource type="Texture2D" uid="uid://cp32pij76c06q" path="res://assets/personaje_amanda/frame_026.png" id="29_te4r0"]
+[ext_resource type="Texture2D" uid="uid://c0fn2ej58y1oh" path="res://assets/personaje_amanda/frame_027.png" id="30_0hype"]
+[ext_resource type="Texture2D" uid="uid://ela1hv6hh2y" path="res://assets/personaje_amanda/frame_028.png" id="31_f2x25"]
+[ext_resource type="Texture2D" uid="uid://b8fjlhs5p4j0c" path="res://assets/personaje_amanda/frame_029.png" id="32_178pn"]
+[ext_resource type="Texture2D" uid="uid://11mq8rs63vk8" path="res://assets/personaje_amanda/frame_030.png" id="33_vv45e"]
+[ext_resource type="Texture2D" uid="uid://dgl3ubawlv83n" path="res://assets/personaje_amanda/frame_031.png" id="34_6p74t"]
+[ext_resource type="Texture2D" uid="uid://cytggrwr1dvro" path="res://assets/personaje_amanda/frame_032.png" id="35_fhdk5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ajtct"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_okqin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_iwp0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pppbj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ea5pv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2vadp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_328vq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jugwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wu873")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kmdk5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_52umb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_j0noa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_lyahc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_qd3ti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_2hkvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_v0eyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_i1hrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6bbdv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_yk8hf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_qmn81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ydckh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ol3t2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_d5gea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_fig4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_x5bkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_gsuao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_di56g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_te4r0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_0hype")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_f2x25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_178pn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_vv45e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_6p74t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_fhdk5")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 16.7
+}]
 
 [node name="WorldMap" type="Control" unique_id=1496554072]
 layout_mode = 3
@@ -34,6 +174,11 @@ offset_bottom = 696.0
 texture = ExtResource("1_82s5j")
 expand_mode = 2
 stretch_mode = 5
+
+[node name="Personaje" type="AnimatedSprite2D" parent="FondoPersonaje" unique_id=1276106933]
+position = Vector2(309, 198)
+scale = Vector2(0.7985, 0.83750004)
+sprite_frames = SubResource("SpriteFrames_ajtct")
 
 [node name="IconoMonedas" type="TextureRect" parent="." unique_id=298470634]
 layout_mode = 0

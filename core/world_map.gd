@@ -1,5 +1,8 @@
 extends Control
 
+func _ready():
+	$FondoPersonaje/Personaje.play("default")
+
 func _on_misiones_pressed():
 	GameManager.goto_scene("res://core/misiones.tscn")
 
