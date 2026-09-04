@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://o1y6byfqgpps"]
 
 [ext_resource type="Script" uid="uid://c1kjxcisdbe2g" path="res://core/main_menu.gd" id="1_4kqf0"]
-[ext_resource type="Texture2D" uid="uid://c5gcbw1lfkkq5" path="res://assets/Jugar.png" id="1_fqoxg"]
+[ext_resource type="Texture2D" uid="uid://qg7k44c77sxp" path="res://assets/FondoUIX.png" id="2_540h8"]
+[ext_resource type="Texture2D" uid="uid://m8whvvoyc7qr" path="res://assets/Iniciar.png" id="3_540h8"]
 
 [node name="MainMenu" type="Control" unique_id=1219943927]
 layout_mode = 3
@@ -16,13 +17,25 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4kqf0")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1174735173]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -9.0
+offset_right = 1150.0
+offset_bottom = 654.0
+texture = ExtResource("2_540h8")
+expand_mode = 2
+stretch_mode = 6
+
 [node name="jugarButton" type="TextureButton" parent="." unique_id=810649338]
 layout_mode = 0
-offset_left = 850.00006
-offset_top = 407.00003
-offset_right = 2049.0
-offset_bottom = 1354.0
+offset_left = 392.0
+offset_top = 384.00003
+offset_right = 2549.767
+offset_bottom = 1243.522
 scale = Vector2(0.17935205, 0.13844903)
-texture_normal = ExtResource("1_fqoxg")
+texture_normal = ExtResource("3_540h8")
+ignore_texture_size = true
+stretch_mode = 6
 
 [connection signal="pressed" from="jugarButton" to="." method="_on_jugar_button_pressed"]

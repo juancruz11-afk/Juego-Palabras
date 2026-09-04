@@ -1,6 +1,14 @@
 [gd_scene format=3 uid="uid://dnco4j4wgwxe8"]
 
 [ext_resource type="Script" uid="uid://c8flqa7r37rru" path="res://core/seleccion_mundos.gd" id="1_2ltx8"]
+[ext_resource type="Texture2D" uid="uid://ijd5lrodlbac" path="res://assets/Mundo 1.png" id="2_e5ujf"]
+[ext_resource type="Texture2D" uid="uid://6hep4oiirqgj" path="res://assets/FondoM.png" id="2_s5ho8"]
+[ext_resource type="Texture2D" uid="uid://wdjjdrdrne2e" path="res://assets/Mundo 2.png" id="3_hkeef"]
+[ext_resource type="Texture2D" uid="uid://6eu0nvyvsaff" path="res://assets/Home.png" id="3_sv2f0"]
+[ext_resource type="Texture2D" uid="uid://cn8f755j7sk7g" path="res://assets/Right.png" id="4_7fl3g"]
+[ext_resource type="Texture2D" uid="uid://b11ya0sp1pt33" path="res://assets/Mundo 3.png" id="4_i3xht"]
+[ext_resource type="Texture2D" uid="uid://6lsk3v6itvt" path="res://assets/Mundo 4.png" id="5_hyna8"]
+[ext_resource type="Texture2D" uid="uid://bsfyirlu5tf7v" path="res://assets/Mundo 5.png" id="6_kuswq"]
 
 [node name="SelecciondeMundos" type="Control" unique_id=20264231]
 layout_mode = 3
@@ -10,21 +18,60 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2ltx8")
+texturas_mundos = Array[Texture2D]([ExtResource("2_e5ujf"), ExtResource("3_hkeef"), ExtResource("4_i3xht"), ExtResource("5_hyna8"), ExtResource("6_kuswq")])
+metadata/_edit_horizontal_guides_ = [-100.0]
 
-[node name="Label" type="Label" parent="." unique_id=1181566869]
+[node name="Fondo" type="TextureRect" parent="." unique_id=1555289948]
 layout_mode = 0
-offset_left = 346.0
-offset_top = 305.0
-offset_right = 689.0
-offset_bottom = 328.0
-text = "SELECCION DE MUNDOS EN CONSTRUCCION"
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 1157.0
+offset_bottom = 648.0
+texture = ExtResource("2_s5ho8")
+expand_mode = 2
 
-[node name="HomeBack" type="Button" parent="." unique_id=1133679622]
+[node name="MBosque" type="TextureButton" parent="." unique_id=1011704309]
 layout_mode = 0
-offset_left = 66.0
-offset_top = 51.0
-offset_right = 140.0
-offset_bottom = 82.0
-text = "regresar"
+offset_left = 44.0
+offset_top = 29.0
+offset_right = 1118.0
+offset_bottom = 625.0
+texture_normal = ExtResource("2_e5ujf")
+ignore_texture_size = true
+stretch_mode = 5
 
+[node name="HomeBack" type="TextureButton" parent="." unique_id=1373183950]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 52.0
+offset_right = 158.0
+offset_bottom = 142.0
+texture_normal = ExtResource("3_sv2f0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="FlechaR" type="TextureButton" parent="." unique_id=1436079112]
+layout_mode = 0
+offset_left = 1046.0
+offset_top = 244.0
+offset_right = 1124.0
+offset_bottom = 390.0
+texture_normal = ExtResource("4_7fl3g")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="FlechaL" type="TextureButton" parent="." unique_id=635340996]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 233.0
+offset_right = 120.0
+offset_bottom = 377.0
+texture_normal = ExtResource("4_7fl3g")
+ignore_texture_size = true
+stretch_mode = 6
+flip_h = true
+
+[connection signal="pressed" from="MBosque" to="." method="_on_m_bosque_pressed"]
 [connection signal="pressed" from="HomeBack" to="." method="_on_regresar_button_pressed"]
+[connection signal="pressed" from="FlechaR" to="." method="_on_flecha_r_pressed"]
+[connection signal="pressed" from="FlechaL" to="." method="_on_flecha_l_pressed"]
