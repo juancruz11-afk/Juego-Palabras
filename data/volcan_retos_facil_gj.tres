@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="WordBank" format=3 uid="uid://biow5in7uysaq"]
+
+[ext_resource type="Script" uid="uid://dvq8im8g5jexf" path="res://data/categoria_palabras.gd" id="1_lfbmb"]
+[ext_resource type="Script" uid="uid://dlttxgoacwjob" path="res://data/word_bank.gd" id="2_jewu0"]
+
+[sub_resource type="Resource" id="Resource_edssp"]
+script = ExtResource("1_lfbmb")
+etiqueta = "Cubeta G"
+palabras = Array[String](["gato", "gente", "ligero", "girasol", "gemelo", "gigante", "geranio", "general"])
+metadata/_custom_type_script = "uid://dvq8im8g5jexf"
+
+[sub_resource type="Resource" id="Resource_hh7rb"]
+script = ExtResource("1_lfbmb")
+etiqueta = "Cubeta J"
+palabras = Array[String](["jugo", "jirafa", "jamon", "jabon", "jarra", "juego", "jaula", "jugar", "joven", "jefe", "jardin", "juguete"])
+metadata/_custom_type_script = "uid://dvq8im8g5jexf"
+
+[resource]
+script = ExtResource("2_jewu0")
+grafia = "g / j"
+nivel = "facil"
+categorias = Array[ExtResource("1_lfbmb")]([SubResource("Resource_edssp"), SubResource("Resource_hh7rb")])
+metadata/_custom_type_script = "uid://dlttxgoacwjob"

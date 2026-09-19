@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://b8qwkq15ot1r1"]
+
+[ext_resource type="PackedScene" uid="uid://d1jevhgr32fbk" path="res://core/actividad_arrastrar.tscn" id="1_0ac8c"]
+
+[node name="ActividadArrastrar" unique_id=259137981 instance=ExtResource("1_0ac8c")]

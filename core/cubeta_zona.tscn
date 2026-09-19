@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://blkkqk587baxm"]
+
+[ext_resource type="Script" uid="uid://rya7pvqx5pbh" path="res://core/cubeta_zona.gd" id="1_6rr55"]
+
+[node name="CubetaZona" type="Panel" unique_id=1297920591]
+custom_minimum_size = Vector2(220, 320)
+offset_right = 220.0
+offset_bottom = 320.0
+script = ExtResource("1_6rr55")
+
+[node name="Diseno" type="VBoxContainer" parent="." unique_id=1523099915]
+custom_minimum_size = Vector2(220, 320)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titulo" type="Label" parent="Diseno" unique_id=1044293667]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="Contenedor" type="VBoxContainer" parent="Diseno" unique_id=2038952245]
+layout_mode = 2
+size_flags_vertical = 3

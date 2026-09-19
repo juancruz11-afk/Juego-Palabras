@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://d1jevhgr32fbk"]
+
+[ext_resource type="Script" uid="uid://cfrkqtx52sxpo" path="res://core/actividad_arrastrar.gd" id="1_t0xvb"]
+[ext_resource type="Resource" uid="uid://pf4aulibi42m" path="res://data/playa_letras_facil_bv.tres" id="2_hvt1h"]
+
+[node name="ActividadArrastrar" type="Control" unique_id=259137981]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_t0xvb")
+banco_palabras = ExtResource("2_hvt1h")
+
+[node name="Diseno" type="VBoxContainer" parent="." unique_id=2140022942]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ZonaCubetas" type="HBoxContainer" parent="Diseno" unique_id=1614094437]
+layout_mode = 2
+
+[node name="ZonaTarjetas" type="HFlowContainer" parent="Diseno" unique_id=43853554]
+layout_mode = 2
+
+[node name="BotonRegresar" type="Button" parent="." unique_id=1050541948]
+layout_mode = 0
+offset_left = 1032.0
+offset_top = 48.0
+offset_right = 1106.0
+offset_bottom = 99.0
+text = "SALIR"
+
+[connection signal="pressed" from="BotonRegresar" to="." method="_on_boton_regresar_pressed"]

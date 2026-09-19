@@ -21,7 +21,19 @@ func _on_flecha_l_pressed():
 		actualizar_mundo()
 
 func _on_m_bosque_pressed():
-	print("Mundo seleccionado: ", indice_actual + 1, " - pendiente de contenido")
+	match indice_actual:
+		0:
+			GameManager.goto_scene("res://worlds/bosque/actividad_bosque.tscn")
+		1:
+			GameManager.goto_scene("res://worlds/playa_letras/actividad_playa_letras.tscn")
+		2:
+			GameManager.goto_scene("res://worlds/desierto/actividad_desierto.tscn")
+		3:
+			GameManager.goto_scene("res://worlds/volcan/actividad_volcan.tscn")
+		4:
+			GameManager.goto_scene("res://worlds/universo/actividad_universo.tscn")
+		_:
+			print("Mundo seleccionado: ", indice_actual + 1, " - pendiente de contenido")
 
 func actualizar_mundo():
 	$MBosque.texture_normal = texturas_mundos[indice_actual]

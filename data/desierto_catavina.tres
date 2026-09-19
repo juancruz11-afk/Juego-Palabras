@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WorldData" format=3 uid="uid://dou81hcqjabrl"]
+
+[ext_resource type="Script" uid="uid://dlttxgoacwjob" path="res://data/word_bank.gd" id="1_46kub"]
+[ext_resource type="Resource" uid="uid://btnpqaqak8t2b" path="res://data/desierto_catavina_facil_lly.tres" id="2_5e6w0"]
+[ext_resource type="Script" uid="uid://dl34b6x7y8yrq" path="res://core/world_data.gd" id="2_atce2"]
+
+[resource]
+script = ExtResource("2_atce2")
+id_mundo = "desierto_catavina"
+nombre_mundo = "Desierto de Catavina"
+ubicacion = "Desierto de Catavina"
+nombre_personaje = "Lagartino"
+texto_intro = "Soy Lagartino, el explorador del desierto. Aqui en Catavina la LL y la Y suenan casi igual, por eso a veces nos confundimos. Te voy a compartir mis trucos secretos."
+trucos = Array[String](["Palabras como estrella y botella casi siempre se escriben con LL", "La Y se usa solita como palabra: y, hoy, muy. Tambien va al final de otras palabras: rey, ley"])
+bancos_palabras = Array[ExtResource("1_46kub")]([ExtResource("2_5e6w0")])
+palabras_reto_final = Array[String](["yacimiento", "atropello", "ensillar", "mayolica", "taller", "ayuno", "yeguada", "camello", "ardilla", "rayuela", "muralla", "bocadillo", "chiquillo", "embotellado", "cancilleria", "arrollar", "subyugar", "yuxtaposicion", "cuyo", "ensayista"])
+monedas_recompensa = 50
+skin_recompensa = "Explorador del desierto"
+metadata/_custom_type_script = "uid://dl34b6x7y8yrq"

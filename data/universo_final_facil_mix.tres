@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="WordBank" format=3 uid="uid://crvkle7pbc3i4"]
+
+[ext_resource type="Script" uid="uid://dvq8im8g5jexf" path="res://data/categoria_palabras.gd" id="1_bpknw"]
+[ext_resource type="Script" uid="uid://dlttxgoacwjob" path="res://data/word_bank.gd" id="2_urci4"]
+
+[sub_resource type="Resource" id="Resource_3ki0x"]
+script = ExtResource("1_bpknw")
+etiqueta = "B / V"
+palabras = Array[String](["boca", "vaca", "ventana", "bonito", "vaso"])
+metadata/_custom_type_script = "uid://dvq8im8g5jexf"
+
+[sub_resource type="Resource" id="Resource_wsded"]
+script = ExtResource("1_bpknw")
+etiqueta = "C / S / Z"
+palabras = Array[String](["casa", "sol", "zapato", "cielo", "luz"])
+metadata/_custom_type_script = "uid://dvq8im8g5jexf"
+
+[sub_resource type="Resource" id="Resource_31ihl"]
+script = ExtResource("1_bpknw")
+etiqueta = "G / J"
+palabras = Array[String](["jugo", "gato", "jirafa", "gente", "juego"])
+metadata/_custom_type_script = "uid://dvq8im8g5jexf"
+
+[sub_resource type="Resource" id="Resource_n43nn"]
+script = ExtResource("1_bpknw")
+etiqueta = "LL / Y"
+palabras = Array[String](["lluvia", "llave ", "hoy", "yo", "playa"])
+metadata/_custom_type_script = "uid://dvq8im8g5jexf"
+
+[resource]
+script = ExtResource("2_urci4")
+grafia = "repaso general"
+nivel = "facil"
+categorias = Array[ExtResource("1_bpknw")]([SubResource("Resource_3ki0x"), SubResource("Resource_wsded"), SubResource("Resource_31ihl"), SubResource("Resource_n43nn")])
+metadata/_custom_type_script = "uid://dlttxgoacwjob"

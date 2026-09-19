@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ciggvtb1a6yoh"]
+
+[ext_resource type="PackedScene" uid="uid://d1jevhgr32fbk" path="res://core/actividad_arrastrar.tscn" id="1_qmli1"]
+[ext_resource type="Resource" uid="uid://biow5in7uysaq" path="res://data/volcan_retos_facil_gj.tres" id="2_jtq2q"]
+
+[node name="ActividadArrastrar" unique_id=259137981 instance=ExtResource("1_qmli1")]
+banco_palabras = ExtResource("2_jtq2q")

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WorldData" format=3 uid="uid://bfjnxnpr5sw2r"]
+
+[ext_resource type="Script" uid="uid://dlttxgoacwjob" path="res://data/word_bank.gd" id="1_bloud"]
+[ext_resource type="Resource" uid="uid://cxn4qayn1ctx0" path="res://data/bosque_palabras_facil_csz.tres" id="2_2svf1"]
+[ext_resource type="Script" uid="uid://dl34b6x7y8yrq" path="res://core/world_data.gd" id="2_ii8ht"]
+
+[resource]
+script = ExtResource("2_ii8ht")
+id_mundo = "bosque_palabras"
+nombre_mundo = "Bosque de las Palabras"
+ubicacion = "Sierra de Juarez"
+nombre_personaje = "Buhito"
+texto_intro = "Hola! Soy Buhito, el buho sabio del bosque. La C, la S y la Z suenan parecido pero no se escriben igual. La Z casi siempre anda con las vocales A, O, U. La C casi siempre anda con las vocales E, I."
+trucos = Array[String](["La Z casi siempre anda con las vocales A, O, U (zapato, zorro)", "La C casi siempre anda con las vocales E, I (cielo, cine)"])
+bancos_palabras = Array[ExtResource("1_bloud")]([ExtResource("2_2svf1")])
+palabras_reto_final = Array[String](["consciencia", "ascenso", "cerezo", "exceso", "ansiedad", "cizana", "sinceridad", "escenario", "zozobra", "esclusa", "conciso", "seduccion", "cansancio", "ejercicio", "sensatez", "cosecha", "escoces", "silencio", "zarzuela", "sucesion"])
+monedas_recompensa = 50
+skin_recompensa = "Corona de ramas"
+metadata/_custom_type_script = "uid://dl34b6x7y8yrq"

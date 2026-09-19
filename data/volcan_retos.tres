@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WorldData" format=3 uid="uid://cspacop2xi2j3"]
+
+[ext_resource type="Script" uid="uid://dlttxgoacwjob" path="res://data/word_bank.gd" id="1_t48i6"]
+[ext_resource type="Script" uid="uid://dl34b6x7y8yrq" path="res://core/world_data.gd" id="2_edssp"]
+[ext_resource type="Resource" uid="uid://biow5in7uysaq" path="res://data/volcan_retos_facil_gj.tres" id="2_hh7rb"]
+
+[resource]
+script = ExtResource("2_edssp")
+id_mundo = "volcan_retos"
+nombre_mundo = "Volcan de Retos"
+ubicacion = "San Quintin"
+nombre_personaje = "Erupto"
+texto_intro = "Hola! Soy Erupto, el volcan grunon. La G y la J a veces suenan parecido, pero aqui van mis trucos: los verbos que terminan en GER o GIR casi siempre llevan G, como proteger y elegir. Las palabras que terminan en AJE casi siempre llevan J, como mensaje y viaje."
+trucos = Array[String](["Los verbos que terminan en -GER o -GIR casi siempre se escriben con G (proteger, elegir)", "Las palabras que terminan en -AJE casi siempre se escriben con J (mensaje, viaje)"])
+bancos_palabras = Array[ExtResource("1_t48i6")]([ExtResource("2_hh7rb")])
+palabras_reto_final = Array[String](["extranjero", "gimnasio", "conyuge", "agente", "berenjena", "jerarquia", "garaje", "jengibre", "sumergir", "homenaje", "corregir", "cirujano", "ingeniero", "aprendizaje", "refugio", "tejido", "gitano", "mensaje", "urgencia", "protagonista"])
+monedas_recompensa = 50
+skin_recompensa = "Guardian del volcan"
+metadata/_custom_type_script = "uid://dl34b6x7y8yrq"

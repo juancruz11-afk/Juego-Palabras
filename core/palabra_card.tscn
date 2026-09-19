@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dxpmvwcm8hs53"]
+
+[ext_resource type="Script" uid="uid://b6x7cspernf0c" path="res://core/palabra_card.gd" id="1_qthdk"]
+
+[node name="PalabraCard" type="Panel" unique_id=967813496]
+custom_minimum_size = Vector2(120, 50)
+offset_right = 120.0
+offset_bottom = 50.0
+script = ExtResource("1_qthdk")
+
+[node name="Etiqueta" type="Label" parent="." unique_id=1953165565]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1

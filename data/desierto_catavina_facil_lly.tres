@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="WordBank" format=3 uid="uid://btnpqaqak8t2b"]
+
+[ext_resource type="Script" uid="uid://dvq8im8g5jexf" path="res://data/categoria_palabras.gd" id="1_fkjlm"]
+[ext_resource type="Script" uid="uid://dlttxgoacwjob" path="res://data/word_bank.gd" id="2_sss51"]
+
+[sub_resource type="Resource" id="Resource_atce2"]
+script = ExtResource("1_fkjlm")
+etiqueta = "Cubeta LL"
+palabras = Array[String](["lluvia", "llave", "pollo", "gallina", "silla", "calle", "botella", "ella", "tortilla"])
+metadata/_custom_type_script = "uid://dvq8im8g5jexf"
+
+[sub_resource type="Resource" id="Resource_5e6w0"]
+script = ExtResource("1_fkjlm")
+etiqueta = "Cubeta Y"
+palabras = Array[String](["yo", "hoy", "muy", "rey", "ley", "playa ", "yema", "yeso", "ayuda", "mayo", "payaso"])
+metadata/_custom_type_script = "uid://dvq8im8g5jexf"
+
+[resource]
+script = ExtResource("2_sss51")
+grafia = "ll / y"
+nivel = "facil"
+categorias = Array[ExtResource("1_fkjlm")]([SubResource("Resource_atce2"), SubResource("Resource_5e6w0")])
+metadata/_custom_type_script = "uid://dlttxgoacwjob"

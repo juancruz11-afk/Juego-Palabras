@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="WordBank" format=3 uid="uid://cxn4qayn1ctx0"]
+
+[ext_resource type="Script" uid="uid://dvq8im8g5jexf" path="res://data/categoria_palabras.gd" id="1_l36l1"]
+[ext_resource type="Script" uid="uid://dlttxgoacwjob" path="res://data/word_bank.gd" id="2_driyj"]
+
+[sub_resource type="Resource" id="Resource_ii8ht"]
+script = ExtResource("1_l36l1")
+etiqueta = "Cubeta C"
+palabras = Array[String](["casa", "cielo", "cinco", "cine", "cero", "cara", "dulce ", "cepillo", "cocina"])
+metadata/_custom_type_script = "uid://dvq8im8g5jexf"
+
+[sub_resource type="Resource" id="Resource_2svf1"]
+script = ExtResource("1_l36l1")
+etiqueta = "Cubeta S"
+palabras = Array[String](["sol", "silla", "sopa", "sal", "saco", "sabado"])
+metadata/_custom_type_script = "uid://dvq8im8g5jexf"
+
+[sub_resource type="Resource" id="Resource_f42ss"]
+script = ExtResource("1_l36l1")
+etiqueta = "Cubeta Z"
+palabras = Array[String](["zapato", "zorro", "luz", "azul", "feliz"])
+metadata/_custom_type_script = "uid://dvq8im8g5jexf"
+
+[resource]
+script = ExtResource("2_driyj")
+grafia = "c / s / z"
+nivel = "facil"
+categorias = Array[ExtResource("1_l36l1")]([SubResource("Resource_ii8ht"), SubResource("Resource_2svf1"), SubResource("Resource_f42ss")])
+metadata/_custom_type_script = "uid://dlttxgoacwjob"

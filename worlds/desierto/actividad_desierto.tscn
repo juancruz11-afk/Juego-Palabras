@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dc6q841v4tpwg"]
+
+[ext_resource type="PackedScene" uid="uid://d1jevhgr32fbk" path="res://core/actividad_arrastrar.tscn" id="1_pcnqk"]
+[ext_resource type="Resource" uid="uid://btnpqaqak8t2b" path="res://data/desierto_catavina_facil_lly.tres" id="2_u4jj2"]
+
+[node name="ActividadArrastrar" unique_id=259137981 instance=ExtResource("1_pcnqk")]
+banco_palabras = ExtResource("2_u4jj2")

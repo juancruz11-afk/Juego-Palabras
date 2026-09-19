@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WorldData" format=3 uid="uid://bt2cau7qq5s71"]
+
+[ext_resource type="Script" uid="uid://dlttxgoacwjob" path="res://data/word_bank.gd" id="1_nr8fd"]
+[ext_resource type="Script" uid="uid://dl34b6x7y8yrq" path="res://core/world_data.gd" id="2_ad8yi"]
+[ext_resource type="Resource" uid="uid://crvkle7pbc3i4" path="res://data/universo_final_facil_mix.tres" id="2_n8tpn"]
+
+[resource]
+script = ExtResource("2_ad8yi")
+id_mundo = "universo_final"
+nombre_mundo = "Universo Final"
+ubicacion = "Observatorio de San Pedro Martir"
+nombre_personaje = "Astro"
+texto_intro = "Soy Astro, el astronauta explorador. Ya aprendiste un monton de trucos increibles en los otros mundos. Ahora vamos a juntar todas las estrellas de letras que ganaste y ponerlas a prueba juntas, aqui arriba en el cielo."
+bancos_palabras = Array[ExtResource("1_nr8fd")]([ExtResource("2_n8tpn")])
+palabras_reto_final = Array[String](["bienvenida", "ansiedad", "atropello", "extranjero", "herbivoro", "cizana", "ensayo", "gimnasio", "subversivo", "escenario", "camello", "aprendizaje", "invertir", "seduccion", "taller", "conyuge", "obvio", "sinceridad", "yeguada", "protagonista"])
+monedas_recompensa = 100
+skin_recompensa = "Astronauta Ortografico"
+metadata/_custom_type_script = "uid://dl34b6x7y8yrq"
