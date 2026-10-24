@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://6hep4oiirqgj" path="res://assets/FondoM.png" id="2_s5ho8"]
 [ext_resource type="Texture2D" uid="uid://wdjjdrdrne2e" path="res://assets/Mundo 2.png" id="3_hkeef"]
 [ext_resource type="Texture2D" uid="uid://6eu0nvyvsaff" path="res://assets/Home.png" id="3_sv2f0"]
+[ext_resource type="Texture2D" uid="uid://cqkiwdasirl7w" path="res://assets/mundo_3.png" id="4_1rd47"]
 [ext_resource type="Texture2D" uid="uid://cn8f755j7sk7g" path="res://assets/Right.png" id="4_7fl3g"]
-[ext_resource type="Texture2D" uid="uid://b11ya0sp1pt33" path="res://assets/Mundo 3.png" id="4_i3xht"]
 [ext_resource type="Texture2D" uid="uid://6lsk3v6itvt" path="res://assets/Mundo 4.png" id="5_hyna8"]
 [ext_resource type="Texture2D" uid="uid://bsfyirlu5tf7v" path="res://assets/Mundo 5.png" id="6_kuswq"]
 
@@ -18,7 +18,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2ltx8")
-texturas_mundos = Array[Texture2D]([ExtResource("2_e5ujf"), ExtResource("3_hkeef"), ExtResource("4_i3xht"), ExtResource("5_hyna8"), ExtResource("6_kuswq")])
+texturas_mundos = Array[Texture2D]([ExtResource("2_e5ujf"), ExtResource("3_hkeef"), ExtResource("4_1rd47"), ExtResource("5_hyna8"), ExtResource("6_kuswq")])
 metadata/_edit_horizontal_guides_ = [-100.0]
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=1555289948]

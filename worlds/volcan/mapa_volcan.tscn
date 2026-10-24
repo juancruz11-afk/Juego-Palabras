@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://5fiqyfd5ucp6"]
+
+[ext_resource type="PackedScene" uid="uid://p4bi3ng7hd5u" path="res://core/mundo_intro.tscn" id="1_75j7d"]
+[ext_resource type="Resource" uid="uid://cspacop2xi2j3" path="res://data/volcan_retos.tres" id="2_c4nsg"]
+[ext_resource type="Texture2D" uid="uid://ciosgr180r27e" path="res://assets/Mundos/Volcan/Fondo.png" id="2_ld4se"]
+[ext_resource type="Texture2D" uid="uid://bgdwbaiumg8xf" path="res://assets/Mundos/Volcan/Mar - Volcan.png" id="3_c4nsg"]
+[ext_resource type="Texture2D" uid="uid://sim3g5vmj8bu" path="res://assets/Mundos/Volcan/PERSONAJES/Ratón.png" id="4_b6ac0"]
+[ext_resource type="Texture2D" uid="uid://d3w1oqne2dbqq" path="res://assets/Mundos/Volcan/PERSONAJES/sad.png" id="5_luvw7"]
+[ext_resource type="Texture2D" uid="uid://bapuiqyoq3qai" path="res://assets/Mundos/Volcan/PERSONAJES/Bombero.png" id="6_p2fmx"]
+[ext_resource type="Texture2D" uid="uid://bumnx1g8ci5bo" path="res://assets/Mundos/Volcan/PERSONAJES/Volcani.png" id="7_7yboj"]
+
+[node name="MundoIntro" unique_id=749561035 instance=ExtResource("1_75j7d")]
+datos_mundo = ExtResource("2_c4nsg")
+escena_actividad = "res://worlds/volcan/actividad_volcan.tscn"
+
+[node name="Fondo" type="Sprite2D" parent="CapaFondo" parent_id_path=PackedInt32Array(1454440750) index="0" unique_id=1585414731]
+position = Vector2(3, 0.99999857)
+scale = Vector2(0.38399997, 0.65500003)
+texture = ExtResource("2_ld4se")
+centered = false
+
+[node name="Mar-Volcan" type="Sprite2D" parent="CapaFondo" parent_id_path=PackedInt32Array(1454440750) index="1" unique_id=699706287]
+scale = Vector2(0.384, 0.648)
+texture = ExtResource("3_c4nsg")
+centered = false
+
+[node name="Raton" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="0" unique_id=308199870]
+position = Vector2(127.00001, 436.99997)
+scale = Vector2(0.053500008, 0.048500035)
+texture = ExtResource("4_b6ac0")
+centered = false
+
+[node name="Morsa" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="1" unique_id=249821268]
+position = Vector2(255, 28)
+scale = Vector2(0.095499925, 0.096000016)
+texture = ExtResource("5_luvw7")
+centered = false
+
+[node name="Bombero" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="2" unique_id=168345256]
+position = Vector2(522, 325.00003)
+scale = Vector2(0.09800001, 0.102500044)
+texture = ExtResource("6_p2fmx")
+centered = false
+
+[node name="Volcani" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="3" unique_id=1349341697]
+position = Vector2(575.99994, 326.00006)
+scale = Vector2(0.3846667, 0.658)
+texture = ExtResource("7_7yboj")
+
+[node name="TextoIntro" parent="PanelIntro" parent_id_path=PackedInt32Array(958819539) index="0" unique_id=734076822]
+autowrap_mode = 3

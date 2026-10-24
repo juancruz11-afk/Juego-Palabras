@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://p4bi3ng7hd5u"]
+
+[ext_resource type="Script" uid="uid://dqbds0hyqpg3x" path="res://core/mundo_intro.gd" id="1_1rnhv"]
+
+[node name="MundoIntro" type="Control" unique_id=749561035]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.05
+offset_bottom = 648.0
+script = ExtResource("1_1rnhv")
+metadata/_edit_horizontal_guides_ = [-167.0]
+
+[node name="CapaFondo" type="Node2D" parent="." unique_id=1454440750]
+
+[node name="CapaPersonajes" type="Node2D" parent="." unique_id=1755547308]
+
+[node name="PanelIntro" type="Panel" parent="." unique_id=958819539]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 480.0
+offset_right = 1100.0
+offset_bottom = 630.0
+
+[node name="TextoIntro" type="Label" parent="PanelIntro" unique_id=734076822]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.032380953
+anchor_top = 0.1796667
+anchor_right = 0.96842855
+anchor_bottom = 0.76
+offset_top = 0.049995422
+offset_right = 0.15002441
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hola! Soy Gaby, la gaviota de la playa. 
+Aqui en la playa hay dos letras que suenan igualitas y a veces se nos hacen bolas: la B y la V.
+ Pero no te preocupes, yo te voy a ensenar unos trucos super faciles para saber cual usar:"
+metadata/_edit_use_anchors_ = true
+
+[node name="BotonJugar" type="Button" parent="." unique_id=2104175662]
+layout_mode = 0
+offset_left = 1000.0
+offset_top = 560.0
+offset_right = 1058.0
+offset_bottom = 591.0
+text = "JUGAR"
+
+[node name="BotonRegresar" type="Button" parent="." unique_id=1538138231]
+layout_mode = 0
+offset_left = 1059.0
+offset_top = 32.0
+offset_right = 1111.0
+offset_bottom = 63.0
+text = "SALIR"
+
+[connection signal="pressed" from="BotonJugar" to="." method="_on_boton_jugar_pressed"]
+[connection signal="pressed" from="BotonRegresar" to="." method="_on_boton_regresar_pressed"]

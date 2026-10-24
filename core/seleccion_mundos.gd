@@ -23,15 +23,15 @@ func _on_flecha_l_pressed():
 func _on_m_bosque_pressed():
 	match indice_actual:
 		0:
-			GameManager.goto_scene("res://worlds/bosque/actividad_bosque.tscn")
+			GameManager.goto_scene("res://worlds/bosque/mapa_bosque.tscn")
 		1:
-			GameManager.goto_scene("res://worlds/playa_letras/actividad_playa_letras.tscn")
+			GameManager.goto_scene("res://worlds/playa_letras/mapa_playa.tscn")
 		2:
-			GameManager.goto_scene("res://worlds/desierto/actividad_desierto.tscn")
+			GameManager.goto_scene("res://worlds/desierto/mapa_desierto.tscn")
 		3:
-			GameManager.goto_scene("res://worlds/volcan/actividad_volcan.tscn")
+			GameManager.goto_scene("res://worlds/volcan/mapa_volcan.tscn")
 		4:
-			GameManager.goto_scene("res://worlds/universo/actividad_universo.tscn")
+			GameManager.goto_scene("res://worlds/universo/mapa_universo.tscn")
 		_:
 			print("Mundo seleccionado: ", indice_actual + 1, " - pendiente de contenido")
 

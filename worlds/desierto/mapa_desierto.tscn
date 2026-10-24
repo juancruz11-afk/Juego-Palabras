@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dq688l5ljcbpw"]
+
+[ext_resource type="PackedScene" uid="uid://p4bi3ng7hd5u" path="res://core/mundo_intro.tscn" id="1_bs72s"]
+[ext_resource type="Texture2D" uid="uid://hq8fqbmety4s" path="res://assets/Mundos/desierto/Fondo.png" id="2_5sfna"]
+[ext_resource type="Resource" uid="uid://dou81hcqjabrl" path="res://data/desierto_catavina.tres" id="2_pve62"]
+[ext_resource type="Texture2D" uid="uid://pu4amy3hy4uc" path="res://assets/Mundos/desierto/Elementos.png" id="3_u0g6l"]
+[ext_resource type="Texture2D" uid="uid://do3hxicwe67tr" path="res://assets/Mundos/desierto/PERSONAJES/Iguana.png" id="4_mx7kh"]
+[ext_resource type="Texture2D" uid="uid://cwt6rsbe03mdu" path="res://assets/Mundos/desierto/PERSONAJES/Cactus.png" id="5_pve62"]
+[ext_resource type="Texture2D" uid="uid://cndeoylejg2fv" path="res://assets/Mundos/desierto/PERSONAJES/Flor.png" id="6_c23x4"]
+[ext_resource type="Texture2D" uid="uid://bsc4wtpwne01g" path="res://assets/Mundos/desierto/PERSONAJES/Pintura Rupestre.png" id="7_n2ukd"]
+
+[node name="MundoIntro" unique_id=749561035 instance=ExtResource("1_bs72s")]
+datos_mundo = ExtResource("2_pve62")
+escena_actividad = "res://worlds/desierto/actividad_desierto.tscn"
+metadata/_edit_lock_ = true
+
+[node name="Fondo" type="Sprite2D" parent="CapaFondo" parent_id_path=PackedInt32Array(1454440750) index="0" unique_id=1398080336]
+position = Vector2(-2, 7)
+scale = Vector2(0.38433337, 0.648)
+texture = ExtResource("2_5sfna")
+centered = false
+
+[node name="Elementos" type="Sprite2D" parent="CapaFondo" parent_id_path=PackedInt32Array(1454440750) index="1" unique_id=367240521]
+scale = Vector2(0.38466665, 0.6460001)
+texture = ExtResource("3_u0g6l")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="Iguana" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="0" unique_id=834255046]
+position = Vector2(438, 374)
+scale = Vector2(0.059, 0.051000006)
+texture = ExtResource("4_mx7kh")
+centered = false
+
+[node name="Cactus" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="1" unique_id=643828633]
+position = Vector2(131, 96)
+scale = Vector2(0.122, 0.08999999)
+texture = ExtResource("5_pve62")
+centered = false
+
+[node name="Flor" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="2" unique_id=423012939]
+position = Vector2(615, 491)
+scale = Vector2(0.047499996, 0.050999988)
+texture = ExtResource("6_c23x4")
+centered = false
+
+[node name="PinturaRupestre" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="3" unique_id=597872409]
+position = Vector2(810.00006, 231)
+scale = Vector2(0.07249999, 0.07300002)
+texture = ExtResource("7_n2ukd")
+centered = false
+
+[node name="TextoIntro" parent="PanelIntro" parent_id_path=PackedInt32Array(958819539) index="0" unique_id=734076822]
+autowrap_mode = 3

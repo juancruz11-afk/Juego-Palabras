@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://bty8vn63nx65s"]
+
+[ext_resource type="PackedScene" uid="uid://p4bi3ng7hd5u" path="res://core/mundo_intro.tscn" id="1_u1m02"]
+[ext_resource type="Texture2D" uid="uid://b2v5yjgc02qhf" path="res://assets/Mundos/observatorio/Espacio.png" id="2_8klml"]
+[ext_resource type="Resource" uid="uid://bt2cau7qq5s71" path="res://data/universo_final.tres" id="2_cqrju"]
+[ext_resource type="Script" uid="uid://s4cetwknchmc" path="res://worlds/universo/mapa_universo.gd" id="2_u6y18"]
+[ext_resource type="Texture2D" uid="uid://c1reyuijg6qb6" path="res://assets/Mundos/observatorio/PERSONAJES/Astronauta.png" id="3_6ng2i"]
+[ext_resource type="Texture2D" uid="uid://cwft408hmy1wn" path="res://assets/Mundos/observatorio/PERSONAJES/Estrella 1.png" id="4_cqrju"]
+[ext_resource type="Texture2D" uid="uid://dm0wnaur1byqu" path="res://assets/Mundos/observatorio/PERSONAJES/Estrella 2.png" id="5_w023b"]
+[ext_resource type="Texture2D" uid="uid://pyd1f6snrmma" path="res://assets/Mundos/observatorio/PERSONAJES/Estrella 3.png" id="6_u6y18"]
+[ext_resource type="Texture2D" uid="uid://d0lrgeqvoo6xo" path="res://assets/Mundos/observatorio/PERSONAJES/Estrella 4.png" id="7_6ng2i"]
+[ext_resource type="Shader" uid="uid://cciaywx4h3slr" path="res://worlds/universo/lupa.gdshader" id="9_u6y18"]
+[ext_resource type="Texture2D" uid="uid://dt7677pn7f5kn" path="res://assets/Mundos/observatorio/PERSONAJES/Telescopio.png" id="9_w023b"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lg2b4"]
+shader = ExtResource("9_u6y18")
+shader_parameter/centro = Vector2(576, 324)
+shader_parameter/radio = 150.0
+shader_parameter/suavizado = 4.0
+shader_parameter/opacidad = 1.0
+
+[node name="MundoIntro" unique_id=749561035 instance=ExtResource("1_u1m02")]
+script = ExtResource("2_u6y18")
+radio_lupa = 150.0
+datos_mundo = ExtResource("2_cqrju")
+escena_actividad = "res://worlds/universo/actividad_universo.tscn"
+
+[node name="Fondo" type="Sprite2D" parent="CapaFondo" parent_id_path=PackedInt32Array(1454440750) index="0" unique_id=554114747]
+scale = Vector2(0.38400003, 0.648)
+texture = ExtResource("2_8klml")
+centered = false
+
+[node name="Astronauta" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="0" unique_id=1246200036]
+position = Vector2(454, 160)
+scale = Vector2(0.121500015, 0.11550001)
+texture = ExtResource("3_6ng2i")
+centered = false
+
+[node name="Estrella1" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="1" unique_id=1572962099]
+position = Vector2(63, 106)
+scale = Vector2(0.10750002, 0.089999996)
+texture = ExtResource("4_cqrju")
+centered = false
+
+[node name="Estrella2" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="2" unique_id=1801488014]
+position = Vector2(254, 353)
+scale = Vector2(0.0985, 0.08949999)
+texture = ExtResource("5_w023b")
+centered = false
+
+[node name="Estrella3" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="3" unique_id=2099857660]
+position = Vector2(745, 332)
+scale = Vector2(0.10349996, 0.09300002)
+texture = ExtResource("6_u6y18")
+centered = false
+
+[node name="Estrella4" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="4" unique_id=2020437722]
+position = Vector2(879, 125)
+scale = Vector2(0.106999904, 0.088999994)
+texture = ExtResource("7_6ng2i")
+centered = false
+
+[node name="Oscuridad" type="ColorRect" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="5" unique_id=743016593]
+material = SubResource("ShaderMaterial_lg2b4")
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+
+[node name="Telescopio" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="6" unique_id=1444732974]
+position = Vector2(-598, 331)
+scale = Vector2(0.90234375, 0.81375)
+texture = ExtResource("9_w023b")
+
+[node name="TextoIntro" parent="PanelIntro" parent_id_path=PackedInt32Array(958819539) index="0" unique_id=734076822]
+anchor_left = 0.027619047
+anchor_top = 0.1996667
+anchor_right = 0.9636666
+anchor_bottom = 0.78
+autowrap_mode = 3

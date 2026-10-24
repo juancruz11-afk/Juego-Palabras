@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://3khypt7r5hsp"]
+
+[ext_resource type="PackedScene" uid="uid://p4bi3ng7hd5u" path="res://core/mundo_intro.tscn" id="1_6l828"]
+[ext_resource type="Resource" uid="uid://bfjnxnpr5sw2r" path="res://data/bosque_palabras.tres" id="2_5eppt"]
+[ext_resource type="Texture2D" uid="uid://bohkc1lm6segc" path="res://assets/Mundos/bosque/Fondo.png" id="2_actba"]
+[ext_resource type="Texture2D" uid="uid://cdkxunjth4hfh" path="res://assets/Mundos/bosque/Pasto.png" id="3_1njvg"]
+[ext_resource type="Texture2D" uid="uid://cjjrictt7rrhn" path="res://assets/Mundos/bosque/Elementos.png" id="4_iwo3a"]
+[ext_resource type="Texture2D" uid="uid://ddntaeix8tc72" path="res://assets/Mundos/bosque/PERSONAJES/Buho.png" id="5_03sg4"]
+[ext_resource type="Texture2D" uid="uid://csodggqirb1x0" path="res://assets/Mundos/bosque/PERSONAJES/Pajaro.png" id="6_i0tpe"]
+[ext_resource type="Texture2D" uid="uid://bnb68c34m2u6n" path="res://assets/Mundos/bosque/PERSONAJES/Cimarron.png" id="7_5eppt"]
+[ext_resource type="Texture2D" uid="uid://i1g276bm4jms" path="res://assets/Mundos/bosque/PERSONAJES/Rana.png" id="8_i0tpe"]
+
+[node name="MundoIntro" unique_id=749561035 instance=ExtResource("1_6l828")]
+datos_mundo = ExtResource("2_5eppt")
+escena_actividad = "res://worlds/bosque/actividad_bosque.tscn"
+
+[node name="Fondo" type="Sprite2D" parent="CapaFondo" parent_id_path=PackedInt32Array(1454440750) index="0" unique_id=2146340141]
+scale = Vector2(0.3843333, 0.648)
+texture = ExtResource("2_actba")
+centered = false
+
+[node name="Pasto" type="Sprite2D" parent="CapaFondo" parent_id_path=PackedInt32Array(1454440750) index="1" unique_id=1278330568]
+position = Vector2(-2.999999, 180)
+scale = Vector2(0.38500002, 0.64842665)
+texture = ExtResource("3_1njvg")
+centered = false
+
+[node name="Elementos" type="Sprite2D" parent="CapaFondo" parent_id_path=PackedInt32Array(1454440750) index="2" unique_id=1971336980]
+scale = Vector2(0.38500002, 0.651)
+texture = ExtResource("4_iwo3a")
+centered = false
+
+[node name="Buho" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="0" unique_id=2046563408]
+position = Vector2(413, 223)
+scale = Vector2(0.087500006, 0.091000006)
+texture = ExtResource("5_03sg4")
+centered = false
+
+[node name="Pajaro" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="1" unique_id=2091330790]
+position = Vector2(99, 282)
+scale = Vector2(0.0975, 0.102499925)
+texture = ExtResource("6_i0tpe")
+centered = false
+
+[node name="Cimarron" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="2" unique_id=918460358]
+position = Vector2(746, 91)
+scale = Vector2(0.08749994, 0.08499999)
+texture = ExtResource("7_5eppt")
+centered = false
+
+[node name="Rana" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="3" unique_id=1881198852]
+position = Vector2(883.00006, 434.00003)
+scale = Vector2(0.031499997, 0.038000014)
+texture = ExtResource("8_i0tpe")
+centered = false
+
+[node name="TextoIntro" parent="PanelIntro" parent_id_path=PackedInt32Array(958819539) index="0" unique_id=734076822]
+autowrap_mode = 3

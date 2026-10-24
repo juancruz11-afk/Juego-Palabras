@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://ck03ns0eh4qkd"]
+
+[ext_resource type="PackedScene" uid="uid://p4bi3ng7hd5u" path="res://core/mundo_intro.tscn" id="1_1pclw"]
+[ext_resource type="Resource" uid="uid://cjp8jax55x88n" path="res://data/playa_letras.tres" id="2_mbua0"]
+[ext_resource type="Texture2D" uid="uid://byvhw5wifbigw" path="res://assets/Mundos/playa/Playa.png" id="3_tsfwd"]
+[ext_resource type="Texture2D" uid="uid://baoc07itpm8uo" path="res://assets/Mundos/playa/Mar.png" id="4_yvk1o"]
+[ext_resource type="Texture2D" uid="uid://d110wcspp0sax" path="res://assets/Mundos/playa/Sombrillas.png" id="5_wefdg"]
+[ext_resource type="Texture2D" uid="uid://dlli3gyqgibs5" path="res://assets/Mundos/playa/PERSONAJES/CANGRY.png" id="6_bierk"]
+[ext_resource type="Texture2D" uid="uid://bua2ec177q25c" path="res://assets/Mundos/playa/PERSONAJES/Pirata.png" id="7_vjur7"]
+[ext_resource type="Texture2D" uid="uid://d3b8jumwwnlxe" path="res://assets/Mundos/playa/PERSONAJES/Turistas.png" id="8_beqjn"]
+[ext_resource type="Texture2D" uid="uid://bydy6quien015" path="res://assets/Mundos/playa/PERSONAJES/Salmuel.png" id="9_r40vg"]
+
+[node name="MundoIntro" unique_id=749561035 instance=ExtResource("1_1pclw")]
+datos_mundo = ExtResource("2_mbua0")
+escena_actividad = "res://worlds/playa_letras/actividad_playa_letras.tscn"
+
+[node name="Playa" type="Sprite2D" parent="CapaFondo" parent_id_path=PackedInt32Array(1454440750) index="0" unique_id=271151460]
+position = Vector2(575, 327)
+scale = Vector2(0.38316664, 0.6485)
+texture = ExtResource("3_tsfwd")
+
+[node name="Mar" type="Sprite2D" parent="CapaFondo" parent_id_path=PackedInt32Array(1454440750) index="1" unique_id=539415360]
+position = Vector2(576, 324)
+scale = Vector2(0.38333333, 0.645)
+texture = ExtResource("4_yvk1o")
+
+[node name="Sombrillas" type="Sprite2D" parent="CapaFondo" parent_id_path=PackedInt32Array(1454440750) index="2" unique_id=1508509505]
+position = Vector2(571.75, 346.93753)
+scale = Vector2(0.38149998, 0.55987495)
+texture = ExtResource("5_wefdg")
+
+[node name="Cangry" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="0" unique_id=926905575]
+position = Vector2(242, 567)
+scale = Vector2(0.08199999, 0.072749995)
+texture = ExtResource("6_bierk")
+
+[node name="Pirata" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="1" unique_id=1373893722]
+position = Vector2(-548, -480.00006)
+scale = Vector2(0.3825, 0.3495)
+texture = ExtResource("7_vjur7")
+
+[node name="Turistas" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="2" unique_id=697589650]
+position = Vector2(1026.0001, 513.00006)
+scale = Vector2(0.11712504, 0.1090625)
+texture = ExtResource("8_beqjn")
+
+[node name="Salmuel" type="Sprite2D" parent="CapaPersonajes" parent_id_path=PackedInt32Array(1755547308) index="3" unique_id=2062892649]
+position = Vector2(872.125, 212.87502)
+scale = Vector2(0.101874985, 0.053875003)
+texture = ExtResource("9_r40vg")
+
+[node name="PanelIntro" parent="." index="2" unique_id=958819539]
+offset_left = 189.0
+offset_top = 486.0
+offset_right = 956.0
+offset_bottom = 593.0
+
+[node name="TextoIntro" parent="PanelIntro" index="0" unique_id=734076822]
+autowrap_mode = 2
+
+[node name="BotonJugar" parent="." index="3" unique_id=2104175662]
+offset_left = 1058.0
+offset_top = 29.0
+offset_right = 1116.0
+offset_bottom = 60.0
+
+[node name="BotonRegresar" parent="." index="4" unique_id=1538138231]
+offset_left = 29.0
+offset_top = 26.0
+offset_right = 81.0
+offset_bottom = 57.0
