@@ -1,6 +1,179 @@
 [gd_scene format=3 uid="uid://5d0abptphn6b"]
 
 [ext_resource type="Script" uid="uid://bokv2ctmoakkw" path="res://core/personalizacion.gd" id="1_bl2jl"]
+[ext_resource type="Texture2D" uid="uid://djcchsauej223" path="res://assets/Personalización/Sección 1 off.png" id="2_41eol"]
+[ext_resource type="Texture2D" uid="uid://04dr7i52m82u" path="res://assets/Personalización/Amanda 1.png" id="2_o1uab"]
+[ext_resource type="Texture2D" uid="uid://dpjl0o8lcd52c" path="res://assets/Personalización/Sección 2 on.png" id="3_o1uab"]
+[ext_resource type="Texture2D" uid="uid://nlkqd8ouookn" path="res://assets/Personalización/Sección - Cabello/Cuadros OFF.png" id="4_creqy"]
+[ext_resource type="Texture2D" uid="uid://sfu1q134l72p" path="res://assets/Personalización/Sección - Cabello/Cuadros ON.png" id="5_0b3qv"]
+[ext_resource type="Texture2D" uid="uid://4plc05ai33md" path="res://assets/Personalización/Sección - Ropa/Cuadros off.png" id="7_0b3qv"]
+[ext_resource type="Texture2D" uid="uid://0b32k21de4wy" path="res://assets/Personalización/Sección - Piel/Piel 1 OFF.png" id="7_tkq4t"]
+[ext_resource type="Texture2D" uid="uid://d4chqva80uume" path="res://assets/Personalización/Sección - Piel/PIEL 1 ON.png" id="8_6ivsl"]
+[ext_resource type="Texture2D" uid="uid://b73o56cy0wje3" path="res://assets/Personalización/Sección - Ropa/Cuadros on.png" id="8_jl1fk"]
+[ext_resource type="Texture2D" uid="uid://dr5d74r2qvcc6" path="res://assets/Personalización/Sección - Piel/PIEL 2 OFF.png" id="9_3gcoi"]
+[ext_resource type="Texture2D" uid="uid://bhyl17tvs7yi5" path="res://assets/Personalización/Sección - Piel/Piel 2 ON.png" id="10_flprl"]
+[ext_resource type="Texture2D" uid="uid://dn2c7bloq1ww5" path="res://assets/Personalización/Sección - Piel/PIEL 3 OFF.png" id="11_7dms3"]
+[ext_resource type="Texture2D" uid="uid://bccvbh7qkerhq" path="res://assets/Personalización/Sección - Piel/PIEL 3 ON.png" id="12_7uo3c"]
+[ext_resource type="Texture2D" uid="uid://dnq7casiewkk2" path="res://assets/Personalización/Sección - Piel/PIEL 4 OFF.png" id="13_ueapp"]
+[ext_resource type="Texture2D" uid="uid://bq7mxnfe06eux" path="res://assets/Personalización/Sección - Piel/PIEL 4 On.png" id="14_k6hsn"]
+[ext_resource type="Texture2D" uid="uid://fxs3hacjjdhe" path="res://assets/Personalización/Sección - Mochila/Cuadros off.png" id="17_m55yi"]
+[ext_resource type="Texture2D" uid="uid://d3n62msse5uih" path="res://assets/Personalización/Sección - Mochila/Cuadros ON.png" id="18_c2ro8"]
+[ext_resource type="Texture2D" uid="uid://6eu0nvyvsaff" path="res://assets/Home.png" id="19_6ivsl"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_iitqu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4vegw"]
+atlas = ExtResource("4_creqy")
+region = Rect2(903, 149, 673, 676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3o606"]
+atlas = ExtResource("5_0b3qv")
+region = Rect2(895, 116, 749, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58hr2"]
+atlas = ExtResource("4_creqy")
+region = Rect2(87, 149, 673, 676)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_creqy"]
+load_path = "res://.godot/imported/Cuadros ON.png-bba33e5dde7a1d02c94ef186fcd082f0.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wakf1"]
+atlas = SubResource("CompressedTexture2D_creqy")
+region = Rect2(78, 116, 748, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxomr"]
+atlas = ExtResource("4_creqy")
+region = Rect2(87, 936, 673, 676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8dwc4"]
+atlas = ExtResource("5_0b3qv")
+region = Rect2(78, 902, 748, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_652af"]
+atlas = ExtResource("4_creqy")
+region = Rect2(903, 936, 673, 676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bhhn"]
+atlas = ExtResource("5_0b3qv")
+region = Rect2(895, 902, 749, 739)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_o1uab"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iitqu"]
+atlas = ExtResource("9_3gcoi")
+region = Rect2(35, 20, 351, 345)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kt7td"]
+atlas = ExtResource("10_flprl")
+region = Rect2(0, 23, 370, 365)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0b3qv"]
+atlas = ExtResource("7_tkq4t")
+region = Rect2(32, 20, 350, 345)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jl1fk"]
+atlas = ExtResource("8_6ivsl")
+region = Rect2(49, 23, 370, 365)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avk1f"]
+atlas = ExtResource("11_7dms3")
+region = Rect2(41, 20, 351, 345)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhmld"]
+atlas = ExtResource("12_7uo3c")
+region = Rect2(31, 23, 370, 365)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bepsg"]
+atlas = ExtResource("13_ueapp")
+region = Rect2(36, 21, 350, 346)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rjrs8"]
+atlas = ExtResource("14_k6hsn")
+region = Rect2(49, 0, 370, 365)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_6ivsl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1uab"]
+atlas = ExtResource("7_0b3qv")
+region = Rect2(87, 149, 673, 676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_creqy"]
+atlas = ExtResource("8_jl1fk")
+region = Rect2(50, 116, 748, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d4p1b"]
+atlas = ExtResource("7_0b3qv")
+region = Rect2(903, 149, 673, 676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30503"]
+atlas = ExtResource("8_jl1fk")
+region = Rect2(867, 116, 749, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alytm"]
+atlas = ExtResource("7_0b3qv")
+region = Rect2(1712, 154, 670, 661)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ttptx"]
+atlas = ExtResource("8_jl1fk")
+region = Rect2(1672, 116, 749, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_exwbf"]
+atlas = ExtResource("7_0b3qv")
+region = Rect2(87, 936, 673, 676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvfo8"]
+atlas = ExtResource("8_jl1fk")
+region = Rect2(50, 902, 748, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trv0j"]
+atlas = ExtResource("7_0b3qv")
+region = Rect2(903, 936, 673, 676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yj8hd"]
+atlas = ExtResource("8_jl1fk")
+region = Rect2(867, 902, 749, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88qlm"]
+atlas = ExtResource("7_0b3qv")
+region = Rect2(1712, 942, 670, 661)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0gdk"]
+atlas = ExtResource("8_jl1fk")
+region = Rect2(1672, 902, 750, 739)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_3gcoi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2nvbw"]
+atlas = ExtResource("17_m55yi")
+region = Rect2(87, 149, 673, 676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sddrx"]
+atlas = ExtResource("18_c2ro8")
+region = Rect2(78, 116, 748, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkq4t"]
+atlas = ExtResource("17_m55yi")
+region = Rect2(903, 149, 673, 676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ivsl"]
+atlas = ExtResource("18_c2ro8")
+region = Rect2(895, 116, 749, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3gcoi"]
+atlas = ExtResource("17_m55yi")
+region = Rect2(87, 936, 673, 676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uo3c"]
+atlas = ExtResource("18_c2ro8")
+region = Rect2(78, 902, 748, 739)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flprl"]
+atlas = ExtResource("17_m55yi")
+region = Rect2(903, 936, 673, 676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dms3"]
+atlas = ExtResource("18_c2ro8")
+region = Rect2(895, 902, 749, 739)
 
 [node name="Personalizacion" type="Control" unique_id=122447174]
 layout_mode = 3
@@ -10,21 +183,418 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bl2jl")
+metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="." unique_id=1804989677]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1635696567]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=41670412]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="LadoPersonaje" type="Control" parent="HBoxContainer" unique_id=1366561464]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PersonajePreview" type="TextureRect" parent="HBoxContainer/LadoPersonaje" unique_id=1834711584]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = -3.0
+offset_right = 4.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_o1uab")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="LadoBotones" type="VBoxContainer" parent="HBoxContainer" unique_id=277226625]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="CategoriasTabs" type="HBoxContainer" parent="HBoxContainer/LadoBotones" unique_id=2086194820]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/LadoBotones/CategoriasTabs" unique_id=1021721875]
+custom_minimum_size = Vector2(400, 80)
+layout_mode = 2
+texture_normal = ExtResource("2_41eol")
+texture_pressed = ExtResource("3_o1uab")
+texture_hover = ExtResource("3_o1uab")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ButtonColor" type="Button" parent="HBoxContainer/LadoBotones/CategoriasTabs/TextureButton" unique_id=1842986282]
 layout_mode = 0
-offset_left = 422.0
-offset_top = 286.0
-offset_right = 671.0
-offset_bottom = 309.0
-text = "personalizacion en construccion"
+offset_left = 47.0
+offset_top = 25.0
+offset_right = 115.0
+offset_bottom = 47.0
+flat = true
 
-[node name="HomeBack" type="Button" parent="." unique_id=858075202]
+[node name="ButtonCabello" type="Button" parent="HBoxContainer/LadoBotones/CategoriasTabs/TextureButton" unique_id=2052388746]
 layout_mode = 0
-offset_left = 63.0
-offset_top = 46.0
-offset_right = 146.0
-offset_bottom = 77.0
-text = "regreesar"
+offset_left = 130.0
+offset_top = 26.0
+offset_right = 196.0
+offset_bottom = 48.0
+flat = true
 
-[connection signal="pressed" from="HomeBack" to="." method="_on_regresar_button_pressed"]
+[node name="ButtonRopa" type="Button" parent="HBoxContainer/LadoBotones/CategoriasTabs/TextureButton" unique_id=621021443]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 25.0
+offset_right = 283.0
+offset_bottom = 48.0
+flat = true
+
+[node name="ButtonMochila" type="Button" parent="HBoxContainer/LadoBotones/CategoriasTabs/TextureButton" unique_id=1337288548]
+layout_mode = 0
+offset_left = 301.0
+offset_top = 24.0
+offset_right = 369.0
+offset_bottom = 47.0
+flat = true
+
+[node name="GrillaCabello" type="GridContainer" parent="HBoxContainer/LadoBotones" unique_id=796949582]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
+columns = 2
+
+[node name="TextureButton2" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaCabello" unique_id=328464974]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_iitqu")
+texture_normal = SubResource("AtlasTexture_4vegw")
+texture_pressed = SubResource("AtlasTexture_3o606")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaCabello" unique_id=179114360]
+modulate = Color(0.29954746, 0.29954746, 0.29954743, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_iitqu")
+texture_normal = SubResource("AtlasTexture_58hr2")
+texture_pressed = SubResource("AtlasTexture_wakf1")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton3" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaCabello" unique_id=843395652]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_iitqu")
+texture_normal = SubResource("AtlasTexture_mxomr")
+texture_pressed = SubResource("AtlasTexture_8dwc4")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton4" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaCabello" unique_id=694852776]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_iitqu")
+texture_normal = SubResource("AtlasTexture_652af")
+texture_pressed = SubResource("AtlasTexture_0bhhn")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="GrillaPiel" type="GridContainer" parent="HBoxContainer/LadoBotones" unique_id=1521352078]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
+columns = 2
+
+[node name="TextureButton2" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaPiel" unique_id=1461393791]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_o1uab")
+texture_normal = SubResource("AtlasTexture_iitqu")
+texture_pressed = SubResource("AtlasTexture_kt7td")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaPiel" unique_id=1676191621]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_o1uab")
+texture_normal = SubResource("AtlasTexture_0b3qv")
+texture_pressed = SubResource("AtlasTexture_jl1fk")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton3" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaPiel" unique_id=1991084761]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_o1uab")
+texture_normal = SubResource("AtlasTexture_avk1f")
+texture_pressed = SubResource("AtlasTexture_lhmld")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton4" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaPiel" unique_id=1716752464]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_o1uab")
+texture_normal = SubResource("AtlasTexture_bepsg")
+texture_pressed = SubResource("AtlasTexture_rjrs8")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="GrillaRopa" type="GridContainer" parent="HBoxContainer/LadoBotones" unique_id=1273083687]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
+columns = 2
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaRopa" unique_id=107536702]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_6ivsl")
+texture_normal = SubResource("AtlasTexture_o1uab")
+texture_pressed = SubResource("AtlasTexture_creqy")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton2" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaRopa" unique_id=1109944418]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_6ivsl")
+texture_normal = SubResource("AtlasTexture_d4p1b")
+texture_pressed = SubResource("AtlasTexture_30503")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton3" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaRopa" unique_id=195629323]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_6ivsl")
+texture_normal = SubResource("AtlasTexture_alytm")
+texture_pressed = SubResource("AtlasTexture_ttptx")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton4" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaRopa" unique_id=1254105920]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_6ivsl")
+texture_normal = SubResource("AtlasTexture_exwbf")
+texture_pressed = SubResource("AtlasTexture_cvfo8")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton5" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaRopa" unique_id=608899498]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_6ivsl")
+texture_normal = SubResource("AtlasTexture_trv0j")
+texture_pressed = SubResource("AtlasTexture_yj8hd")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton6" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaRopa" unique_id=147893070]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_6ivsl")
+texture_normal = SubResource("AtlasTexture_88qlm")
+texture_pressed = SubResource("AtlasTexture_y0gdk")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="GrillaMochila" type="GridContainer" parent="HBoxContainer/LadoBotones" unique_id=2119617110]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
+columns = 2
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaMochila" unique_id=235035197]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_3gcoi")
+texture_normal = SubResource("AtlasTexture_2nvbw")
+texture_pressed = SubResource("AtlasTexture_sddrx")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton2" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaMochila" unique_id=1225451930]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_3gcoi")
+texture_normal = SubResource("AtlasTexture_tkq4t")
+texture_pressed = SubResource("AtlasTexture_6ivsl")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton3" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaMochila" unique_id=784755270]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_3gcoi")
+texture_normal = SubResource("AtlasTexture_3gcoi")
+texture_pressed = SubResource("AtlasTexture_7uo3c")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton4" type="TextureButton" parent="HBoxContainer/LadoBotones/GrillaMochila" unique_id=766036148]
+modulate = Color(0.29803923, 0.29803923, 0.29803923, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_3gcoi")
+texture_normal = SubResource("AtlasTexture_flprl")
+texture_pressed = SubResource("AtlasTexture_7dms3")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=167903503]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 27.0
+offset_right = 99.0
+offset_bottom = 67.0
+texture_normal = ExtResource("19_6ivsl")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="FondoPopup" type="ColorRect" parent="." unique_id=60282535]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.27450982)
+metadata/_edit_use_anchors_ = true
+
+[node name="CuadroTienda" type="Panel" parent="FondoPopup" unique_id=1853001854]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="FondoPopup/CuadroTienda" unique_id=884643679]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 205.0
+offset_right = 665.0
+offset_bottom = 254.0
+text = "Aspecto no comprado.
+ ¿Deseas ir a la tienda?"
+
+[node name="Button" type="Button" parent="FondoPopup/CuadroTienda" unique_id=1124086236]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 275.0
+offset_right = 516.0
+offset_bottom = 306.0
+text = "Ir a la Tienda"
+
+[node name="Button2" type="Button" parent="FondoPopup/CuadroTienda" unique_id=524958846]
+layout_mode = 0
+offset_left = 558.0
+offset_top = 273.0
+offset_right = 634.0
+offset_bottom = 304.0
+text = "Cancelar"
+
+[connection signal="pressed" from="HBoxContainer/LadoBotones/CategoriasTabs/TextureButton/ButtonColor" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/CategoriasTabs/TextureButton/ButtonCabello" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/CategoriasTabs/TextureButton/ButtonRopa" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/CategoriasTabs/TextureButton/ButtonMochila" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaCabello/TextureButton2" to="." method="_on_cabello_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaCabello/TextureButton" to="." method="_on_cabello_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaCabello/TextureButton" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaCabello/TextureButton3" to="." method="_on_cabello_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaCabello/TextureButton3" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaCabello/TextureButton4" to="." method="_on_cabello_4_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaCabello/TextureButton4" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaPiel/TextureButton2" to="." method="_on_piel_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaPiel/TextureButton" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaPiel/TextureButton" to="." method="_on_piel_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaPiel/TextureButton3" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaPiel/TextureButton3" to="." method="_on_piel_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaPiel/TextureButton4" to="." method="_on_piel_4_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaPiel/TextureButton4" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaRopa/TextureButton" to="." method="_on_ropa_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaRopa/TextureButton2" to="." method="_on_ropa_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaRopa/TextureButton2" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaRopa/TextureButton3" to="." method="_on_ropa_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaRopa/TextureButton3" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaRopa/TextureButton4" to="." method="_on_ropa_4_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaRopa/TextureButton4" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaRopa/TextureButton5" to="." method="_on_ropa_5_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaRopa/TextureButton5" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaRopa/TextureButton6" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaMochila/TextureButton" to="." method="_on_mochila_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaMochila/TextureButton2" to="." method="_on_mochila_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaMochila/TextureButton2" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaMochila/TextureButton3" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaMochila/TextureButton3" to="." method="_on_mochila_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaMochila/TextureButton4" to="." method="_on_mochila_4_pressed"]
+[connection signal="pressed" from="HBoxContainer/LadoBotones/GrillaMochila/TextureButton4" to="." method="_on_item_bloqueado_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_regresar_button_pressed"]
+[connection signal="pressed" from="FondoPopup/CuadroTienda/Button" to="." method="_on_boton_ir_tienda_pressed"]
+[connection signal="pressed" from="FondoPopup/CuadroTienda/Button2" to="." method="_on_boton_cancelar_pressed"]
