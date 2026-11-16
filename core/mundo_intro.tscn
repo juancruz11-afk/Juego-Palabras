@@ -35,7 +35,23 @@ grow_vertical = 2
 text = "Hola! Soy Gaby, la gaviota de la playa. 
 Aqui en la playa hay dos letras que suenan igualitas y a veces se nos hacen bolas: la B y la V.
  Pero no te preocupes, yo te voy a ensenar unos trucos super faciles para saber cual usar:"
+autowrap_mode = 3
 metadata/_edit_use_anchors_ = true
+
+[node name="Indicador" type="Label" parent="PanelIntro"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -30.0
+offset_right = 360.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0.9, 0.5, 1)
+theme_override_font_sizes/font_size = 14
+text = "Clic para continuar"
+vertical_alignment = 1
 
 [node name="BotonJugar" type="Button" parent="." unique_id=2104175662]
 layout_mode = 0

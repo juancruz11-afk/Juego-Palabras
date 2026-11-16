@@ -2,17 +2,21 @@
 
 [ext_resource type="Script" uid="uid://dvq8im8g5jexf" path="res://data/categoria_palabras.gd" id="1_lyuga"]
 [ext_resource type="Script" uid="uid://dlttxgoacwjob" path="res://data/word_bank.gd" id="2_s4fvb"]
+[ext_resource type="Texture2D" uid="uid://cyu0dx70abxu7" path="res://assets/Mundos/playa/cubeta_b.png" id="3_cubb"]
+[ext_resource type="Texture2D" uid="uid://xa8p0kbxbsij" path="res://assets/Mundos/playa/cubeta_v.png" id="4_cubv"]
 
 [sub_resource type="Resource" id="Resource_ajtct"]
 script = ExtResource("1_lyuga")
 etiqueta = "Cubeta B"
-palabras = Array[String](["boca", "barco", "bebe", "banco", "bonito", "boton", "burro", "balon", "barba", "bandera", "subir"])
+palabras = Array[String](["vestibulo", "absorto", "subvencion", "vislumbrar", "obstaculo", "exuberante", "absorber"])
+imagen_contenedor = ExtResource("3_cubb")
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [sub_resource type="Resource" id="Resource_vqpdq"]
 script = ExtResource("1_lyuga")
 etiqueta = "Cubeta V"
-palabras = Array[String](["vaca", "ventana", "vela", "viento", "vaso", "verde", "voz", "vino", "volar"])
+palabras = Array[String](["envolver", "subversivo", "veraniego", "vibrante", "herbivoro", "obvio", "benevolo", "invertir", "absolver", "vehiculo", "bienvenida", "hervir", "vivienda"])
+imagen_contenedor = ExtResource("4_cubv")
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [resource]
@@ -20,5 +24,6 @@ resource_name = "WordBank"
 script = ExtResource("2_s4fvb")
 grafia = "b / v"
 nivel = "facil"
+carpeta_imagenes = "res://assets/Mundos/playa/palabras"
 categorias = Array[ExtResource("1_lyuga")]([SubResource("Resource_ajtct"), SubResource("Resource_vqpdq")])
 metadata/_custom_type_script = "uid://dlttxgoacwjob"

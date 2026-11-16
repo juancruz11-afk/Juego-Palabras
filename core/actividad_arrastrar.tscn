@@ -2,6 +2,42 @@
 
 [ext_resource type="Script" uid="uid://cfrkqtx52sxpo" path="res://core/actividad_arrastrar.gd" id="1_t0xvb"]
 [ext_resource type="Resource" uid="uid://pf4aulibi42m" path="res://data/playa_letras_facil_bv.tres" id="2_hvt1h"]
+[ext_resource type="Texture2D" uid="uid://dup02bsv0qs8x" path="res://assets/UI/actividad/Vidas4.png" id="3_vidas"]
+[ext_resource type="Texture2D" path="res://assets/UI/actividad/Pantalla Principal.png" id="4_panel"]
+[ext_resource type="Texture2D" path="res://assets/UI/actividad/Pausa.png" id="5_pausa"]
+[ext_resource type="Texture2D" path="res://assets/UI/actividad/Volumen.png" id="6_sonido"]
+[ext_resource type="Texture2D" uid="uid://cgjlk2e6uv0a6" path="res://assets/Monedas.png" id="7_monedas"]
+[ext_resource type="Texture2D" uid="uid://cn0ru2xm1s3wk" path="res://assets/Estrellas.png" id="8_estrellas"]
+
+[sub_resource type="StyleBoxFlat" id="estilo_cuadro"]
+content_margin_left = 28.0
+content_margin_top = 24.0
+content_margin_right = 28.0
+content_margin_bottom = 24.0
+bg_color = Color(0.99, 0.93, 0.74, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.85, 0.58, 0, 1)
+corner_radius_top_left = 28
+corner_radius_top_right = 28
+corner_radius_bottom_right = 28
+corner_radius_bottom_left = 28
+
+[sub_resource type="StyleBoxFlat" id="estilo_boton"]
+bg_color = Color(0.85, 0.58, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="estilo_boton_activo"]
+bg_color = Color(0.72, 0.47, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
 
 [node name="ActividadArrastrar" type="Control" unique_id=259137981]
 layout_mode = 3
@@ -11,7 +47,127 @@ offset_bottom = 648.0
 script = ExtResource("1_t0xvb")
 banco_palabras = ExtResource("2_hvt1h")
 
-[node name="Diseno" type="VBoxContainer" parent="." unique_id=2140022942]
+[node name="Fondo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PanelJuego" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 70.0
+offset_right = 1118.0
+offset_bottom = 630.0
+mouse_filter = 2
+texture = ExtResource("4_panel")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ZonaTarjetas" type="HFlowContainer" parent="." unique_id=43853554]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 120.0
+offset_right = 1079.0
+offset_bottom = 330.0
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 14
+alignment = 1
+
+[node name="ZonaCubetas" type="HBoxContainer" parent="." unique_id=1614094437]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 400.0
+offset_right = 1079.0
+offset_bottom = 590.0
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="BarraVidas" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 90.0
+offset_right = 256.0
+offset_bottom = 163.0
+mouse_filter = 2
+texture = ExtResource("3_vidas")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BotonPausa" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 16.0
+offset_right = 90.0
+offset_bottom = 64.0
+texture_normal = ExtResource("5_pausa")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="BotonSonido" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 16.0
+offset_right = 150.0
+offset_bottom = 64.0
+texture_normal = ExtResource("6_sonido")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ContadorMonedas" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 740.0
+offset_top = 2.0
+offset_right = 916.0
+offset_bottom = 74.0
+mouse_filter = 2
+texture = ExtResource("7_monedas")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Cantidad" type="Label" parent="ContadorMonedas"]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 27.0
+offset_right = 148.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0.13, 0.2, 0.45, 1)
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContadorEstrellas" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 930.0
+offset_top = 2.0
+offset_right = 1106.0
+offset_bottom = 74.0
+mouse_filter = 2
+texture = ExtResource("8_estrellas")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Cantidad" type="Label" parent="ContadorEstrellas"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 27.0
+offset_right = 154.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0.13, 0.2, 0.45, 1)
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Ventana" type="Control" parent="."]
+process_mode = 3
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,18 +175,81 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ZonaCubetas" type="HBoxContainer" parent="Diseno" unique_id=1614094437]
+[node name="Sombra" type="ColorRect" parent="Ventana"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.55)
+
+[node name="Cuadro" type="PanelContainer" parent="Ventana"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = -140.0
+offset_right = 220.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("estilo_cuadro")
+
+[node name="Contenido" type="VBoxContainer" parent="Ventana/Cuadro"]
 layout_mode = 2
+theme_override_constants/separation = 18
+alignment = 1
 
-[node name="ZonaTarjetas" type="HFlowContainer" parent="Diseno" unique_id=43853554]
+[node name="Titulo" type="Label" parent="Ventana/Cuadro/Contenido"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.45, 0.25, 0.05, 1)
+theme_override_font_sizes/font_size = 44
+text = "Titulo"
+horizontal_alignment = 1
 
-[node name="BotonRegresar" type="Button" parent="." unique_id=1050541948]
-layout_mode = 0
-offset_left = 1032.0
-offset_top = 48.0
-offset_right = 1106.0
-offset_bottom = 99.0
-text = "SALIR"
+[node name="Detalle" type="Label" parent="Ventana/Cuadro/Contenido"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.45, 0.25, 0.05, 1)
+theme_override_font_sizes/font_size = 24
+text = "Detalle"
+horizontal_alignment = 1
 
-[connection signal="pressed" from="BotonRegresar" to="." method="_on_boton_regresar_pressed"]
+[node name="Botones" type="HBoxContainer" parent="Ventana/Cuadro/Contenido"]
+layout_mode = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="BotonPrimario" type="Button" parent="Ventana/Cuadro/Contenido/Botones"]
+custom_minimum_size = Vector2(160, 54)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("estilo_boton")
+theme_override_styles/hover = SubResource("estilo_boton_activo")
+theme_override_styles/pressed = SubResource("estilo_boton_activo")
+theme_override_styles/focus = SubResource("estilo_boton")
+text = "Boton"
+
+[node name="BotonSecundario" type="Button" parent="Ventana/Cuadro/Contenido/Botones"]
+custom_minimum_size = Vector2(160, 54)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("estilo_boton")
+theme_override_styles/hover = SubResource("estilo_boton_activo")
+theme_override_styles/pressed = SubResource("estilo_boton_activo")
+theme_override_styles/focus = SubResource("estilo_boton")
+text = "Boton"
+
+[connection signal="pressed" from="BotonPausa" to="." method="_on_boton_pausa_pressed"]
+[connection signal="pressed" from="BotonSonido" to="." method="_on_boton_sonido_pressed"]
+[connection signal="pressed" from="Ventana/Cuadro/Contenido/Botones/BotonPrimario" to="." method="_on_boton_primario_pressed"]
+[connection signal="pressed" from="Ventana/Cuadro/Contenido/Botones/BotonSecundario" to="." method="_on_boton_secundario_pressed"]

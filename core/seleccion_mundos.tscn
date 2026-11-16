@@ -9,6 +9,11 @@
 [ext_resource type="Texture2D" uid="uid://cn8f755j7sk7g" path="res://assets/Right.png" id="4_7fl3g"]
 [ext_resource type="Texture2D" uid="uid://6lsk3v6itvt" path="res://assets/Mundo 4.png" id="5_hyna8"]
 [ext_resource type="Texture2D" uid="uid://bsfyirlu5tf7v" path="res://assets/Mundo 5.png" id="6_kuswq"]
+[ext_resource type="Texture2D" path="res://assets/Mundos/bloqueados/bosque.png" id="b1_bosque"]
+[ext_resource type="Texture2D" path="res://assets/Mundos/bloqueados/playa.png" id="b2_playa"]
+[ext_resource type="Texture2D" path="res://assets/Mundos/bloqueados/desierto.png" id="b3_desierto"]
+[ext_resource type="Texture2D" path="res://assets/Mundos/bloqueados/volcan.png" id="b4_volcan"]
+[ext_resource type="Texture2D" path="res://assets/Mundos/bloqueados/universo.png" id="b5_universo"]
 
 [node name="SelecciondeMundos" type="Control" unique_id=20264231]
 layout_mode = 3
@@ -19,6 +24,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2ltx8")
 texturas_mundos = Array[Texture2D]([ExtResource("2_e5ujf"), ExtResource("3_hkeef"), ExtResource("4_1rd47"), ExtResource("5_hyna8"), ExtResource("6_kuswq")])
+texturas_bloqueadas = Array[Texture2D]([ExtResource("b1_bosque"), ExtResource("b2_playa"), ExtResource("b3_desierto"), ExtResource("b4_volcan"), ExtResource("b5_universo")])
 metadata/_edit_horizontal_guides_ = [-100.0]
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=1555289948]

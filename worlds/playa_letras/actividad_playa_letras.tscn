@@ -2,4 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d1jevhgr32fbk" path="res://core/actividad_arrastrar.tscn" id="1_0ac8c"]
 
+[ext_resource type="Texture2D" path="res://assets/Mundos/playa/Playa.png" id="2_fondo"]
+
 [node name="ActividadArrastrar" unique_id=259137981 instance=ExtResource("1_0ac8c")]
+fondo = ExtResource("2_fondo")

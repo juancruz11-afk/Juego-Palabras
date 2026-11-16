@@ -2,6 +2,8 @@ extends Control
 
 func _ready():
 	$FondoPersonaje/Personaje.play("default")
+	$IconoMonedas/Label.text = str(GameManager.coins)
+	$IconoEstrellas/Label.text = str(GameManager.stars)
 
 func _on_misiones_pressed():
 	GameManager.goto_scene("res://core/misiones.tscn")
