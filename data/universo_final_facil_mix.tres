@@ -2,34 +2,43 @@
 
 [ext_resource type="Script" uid="uid://dvq8im8g5jexf" path="res://data/categoria_palabras.gd" id="1_bpknw"]
 [ext_resource type="Script" uid="uid://dlttxgoacwjob" path="res://data/word_bank.gd" id="2_urci4"]
+[ext_resource type="Texture2D" path="res://assets/Mundos/observatorio/contenedores/estrella_bv.png" id="e_bv"]
+[ext_resource type="Texture2D" path="res://assets/Mundos/observatorio/contenedores/estrella_csz.png" id="e_csz"]
+[ext_resource type="Texture2D" path="res://assets/Mundos/observatorio/contenedores/estrella_gj.png" id="e_gj"]
+[ext_resource type="Texture2D" path="res://assets/Mundos/observatorio/contenedores/estrella_lly.png" id="e_lly"]
 
 [sub_resource type="Resource" id="Resource_3ki0x"]
 script = ExtResource("1_bpknw")
 etiqueta = "B / V"
-palabras = Array[String](["boca", "vaca", "ventana", "bonito", "vaso"])
+palabras = Array[String](["bienvenida", "herbivoro", "invertir", "obvio", "subversivo"])
+imagen_contenedor = ExtResource("e_bv")
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [sub_resource type="Resource" id="Resource_wsded"]
 script = ExtResource("1_bpknw")
 etiqueta = "C / S / Z"
-palabras = Array[String](["casa", "sol", "zapato", "cielo", "luz"])
+palabras = Array[String](["escenario", "cizana", "ansiedad", "seduccion", "sinceridad"])
+imagen_contenedor = ExtResource("e_csz")
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [sub_resource type="Resource" id="Resource_31ihl"]
 script = ExtResource("1_bpknw")
 etiqueta = "G / J"
-palabras = Array[String](["jugo", "gato", "jirafa", "gente", "juego"])
+palabras = Array[String](["aprendizaje", "extranjero", "gimnasio", "protagonista"])
+imagen_contenedor = ExtResource("e_gj")
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [sub_resource type="Resource" id="Resource_n43nn"]
 script = ExtResource("1_bpknw")
 etiqueta = "LL / Y"
-palabras = Array[String](["lluvia", "llave ", "hoy", "yo", "playa"])
+palabras = Array[String](["camello", "atropello", "conyuge", "ensayo", "taller", "yeguada"])
+imagen_contenedor = ExtResource("e_lly")
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [resource]
 script = ExtResource("2_urci4")
 grafia = "repaso general"
 nivel = "facil"
+carpeta_imagenes = "res://assets/Mundos/observatorio/palabras"
 categorias = Array[ExtResource("1_bpknw")]([SubResource("Resource_3ki0x"), SubResource("Resource_wsded"), SubResource("Resource_31ihl"), SubResource("Resource_n43nn")])
 metadata/_custom_type_script = "uid://dlttxgoacwjob"

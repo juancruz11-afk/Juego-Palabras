@@ -10,6 +10,14 @@ const ESCENA_SALIDA := "res://core/seleccion_mundos.tscn"
 const TEXTURA_SONIDO := preload("res://assets/UI/actividad/Volumen.png")
 const TEXTURA_SILENCIO := preload("res://assets/UI/actividad/Mute.png")
 
+const POSE_NORMAL := 1
+const POSE_FESTEJO := 2
+const POSE_ERROR := 3
+const POSE_POCAS_VIDAS := 4
+const POSE_SIN_VIDAS := 5
+const SEGUNDOS_POSE_ERROR := 2.5
+const VIDAS_POCAS := 2
+
 const MONEDAS_POR_ACTIVIDAD := 10
 const VIDAS_MAXIMAS := 4
 const TEXTURAS_VIDAS := [
@@ -28,6 +36,8 @@ const TEXTURAS_VIDAS := [
 @onready var zona_tarjetas: HFlowContainer = $ZonaTarjetas
 @onready var barra_vidas: TextureRect = $BarraVidas
 @onready var imagen_fondo: TextureRect = $Fondo
+@onready var avatar: TextureRect = $Avatar
+@onready var temporizador_pose: Timer = $TemporizadorPose
 @onready var boton_sonido: TextureButton = $BotonSonido
 @onready var etiqueta_monedas: Label = $ContadorMonedas/Cantidad
 @onready var etiqueta_estrellas: Label = $ContadorEstrellas/Cantidad
@@ -66,10 +76,16 @@ func limpiar() -> void:
 	vidas = VIDAS_MAXIMAS
 	terminada = false
 	actualizar_barra_vidas()
+	temporizador_pose.stop()
+	mostrar_pose(POSE_NORMAL)
 
 func crear_cubetas() -> void:
+	var cantidad := banco_palabras.categorias.size()
+	var separacion: int = zona_cubetas.get_theme_constant("separation")
+	var ancho_disponible: float = (zona_cubetas.size.x - separacion * (cantidad - 1)) / max(cantidad, 1)
 	for categoria in banco_palabras.categorias:
 		var cubeta := ESCENA_CUBETA.instantiate()
+		cubeta.ancho_maximo = ancho_disponible
 		cubeta.etiqueta_categoria = categoria.etiqueta
 		cubeta.imagen = categoria.imagen_contenedor
 		cubeta.palabra_soltada.connect(_on_palabra_soltada)
@@ -115,7 +131,25 @@ func perder_vida() -> void:
 	vidas = max(vidas - 1, 0)
 	actualizar_barra_vidas()
 	if vidas == 0:
+		temporizador_pose.stop()
+		mostrar_pose(POSE_SIN_VIDAS)
 		perder_actividad()
+	else:
+		mostrar_pose(POSE_ERROR)
+		temporizador_pose.start(SEGUNDOS_POSE_ERROR)
+
+func mostrar_pose(pose: int) -> void:
+	avatar.texture = GameManager.textura_avatar(pose)
+
+# Pose a la que regresa el avatar despues de mostrar la pose de error
+func pose_base() -> int:
+	if vidas <= VIDAS_POCAS:
+		return POSE_POCAS_VIDAS
+	return POSE_NORMAL
+
+func _on_temporizador_pose_timeout() -> void:
+	if not terminada:
+		mostrar_pose(pose_base())
 
 func actualizar_barra_vidas() -> void:
 	barra_vidas.texture = TEXTURAS_VIDAS[vidas]
@@ -137,6 +171,8 @@ func calcular_estrellas() -> int:
 
 func completar_actividad() -> void:
 	terminada = true
+	temporizador_pose.stop()
+	mostrar_pose(POSE_FESTEJO)
 	var estrellas := calcular_estrellas()
 	var id_mundo := GameManager.current_world
 	var primera_vez := id_mundo != "" and not GameManager.mundos_completados.has(id_mundo)

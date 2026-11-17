@@ -1,7 +1,7 @@
 extends Panel
 class_name PalabraCard
 
-const TAMANO_CON_IMAGEN := Vector2(168, 43)
+const ANCHO_CON_IMAGEN := 215.0
 
 @export var palabra: String = ""
 @export var categoria_correcta: String = ""
@@ -16,7 +16,8 @@ func _ready() -> void:
 	if textura:
 		imagen.texture = textura
 		etiqueta.hide()
-		custom_minimum_size = TAMANO_CON_IMAGEN
+		var alto: float = ANCHO_CON_IMAGEN * textura.get_height() / textura.get_width()
+		custom_minimum_size = Vector2(ANCHO_CON_IMAGEN, alto)
 		add_theme_stylebox_override("panel", StyleBoxEmpty.new())
 
 func _get_drag_data(_at_position: Vector2) -> Variant:

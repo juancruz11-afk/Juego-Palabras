@@ -5,19 +5,20 @@
 
 [sub_resource type="Resource" id="Resource_edssp"]
 script = ExtResource("1_lfbmb")
-etiqueta = "Cubeta G"
-palabras = Array[String](["gato", "gente", "ligero", "girasol", "gemelo", "gigante", "geranio", "general"])
+etiqueta = "G"
+palabras = Array[String](["urgencia", "agente", "corregir", "conyuge", "gimnasio", "gitano", "ingeniero", "refugio", "protagonista", "sumergir", "jengibre"])
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [sub_resource type="Resource" id="Resource_hh7rb"]
 script = ExtResource("1_lfbmb")
-etiqueta = "Cubeta J"
-palabras = Array[String](["jugo", "jirafa", "jamon", "jabon", "jarra", "juego", "jaula", "jugar", "joven", "jefe", "jardin", "juguete"])
+etiqueta = "J"
+palabras = Array[String](["garaje", "tejido", "aprendizaje", "cirujano", "homenaje", "berenjena", "jerarquia", "mensaje", "extranjero"])
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [resource]
 script = ExtResource("2_jewu0")
 grafia = "g / j"
 nivel = "facil"
+carpeta_imagenes = "res://assets/Mundos/Volcan/palabras"
 categorias = Array[ExtResource("1_lfbmb")]([SubResource("Resource_edssp"), SubResource("Resource_hh7rb")])
 metadata/_custom_type_script = "uid://dlttxgoacwjob"

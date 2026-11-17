@@ -5,25 +5,26 @@
 
 [sub_resource type="Resource" id="Resource_ii8ht"]
 script = ExtResource("1_l36l1")
-etiqueta = "Cubeta C"
-palabras = Array[String](["casa", "cielo", "cinco", "cine", "cero", "cara", "dulce ", "cepillo", "cocina"])
+etiqueta = "C"
+palabras = Array[String](["sucesion", "cansancio", "consciencia", "conciso", "ejercicio", "cosecha", "escoces", "silencio", "sinceridad", "escenario"])
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [sub_resource type="Resource" id="Resource_2svf1"]
 script = ExtResource("1_l36l1")
-etiqueta = "Cubeta S"
-palabras = Array[String](["sol", "silla", "sopa", "sal", "saco", "sabado"])
+etiqueta = "S"
+palabras = Array[String](["ansiedad", "ascenso", "esclusa", "seduccion", "exceso"])
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [sub_resource type="Resource" id="Resource_f42ss"]
 script = ExtResource("1_l36l1")
-etiqueta = "Cubeta Z"
-palabras = Array[String](["zapato", "zorro", "luz", "azul", "feliz"])
+etiqueta = "Z"
+palabras = Array[String](["zozobra", "cizana", "zarzuela", "sensatez", "cerezo"])
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [resource]
 script = ExtResource("2_driyj")
 grafia = "c / s / z"
 nivel = "facil"
+carpeta_imagenes = "res://assets/Mundos/bosque/palabras"
 categorias = Array[ExtResource("1_l36l1")]([SubResource("Resource_ii8ht"), SubResource("Resource_2svf1"), SubResource("Resource_f42ss")])
 metadata/_custom_type_script = "uid://dlttxgoacwjob"

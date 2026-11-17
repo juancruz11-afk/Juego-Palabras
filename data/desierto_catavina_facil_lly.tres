@@ -5,19 +5,20 @@
 
 [sub_resource type="Resource" id="Resource_atce2"]
 script = ExtResource("1_fkjlm")
-etiqueta = "Cubeta LL"
-palabras = Array[String](["lluvia", "llave", "pollo", "gallina", "silla", "calle", "botella", "ella", "tortilla"])
+etiqueta = "LL"
+palabras = Array[String](["camello", "atropello", "chiquillo", "bocadillo", "ardilla", "cepillo", "ensillar", "muralla", "taller", "silla"])
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [sub_resource type="Resource" id="Resource_5e6w0"]
 script = ExtResource("1_fkjlm")
-etiqueta = "Cubeta Y"
-palabras = Array[String](["yo", "hoy", "muy", "rey", "ley", "playa ", "yema", "yeso", "ayuda", "mayo", "payaso"])
+etiqueta = "Y"
+palabras = Array[String](["yeso", "ensayo", "ayuno", "proyecto", "rayuela", "leyenda", "mayolica", "yacimiento", "yeguada", "trayecto"])
 metadata/_custom_type_script = "uid://dvq8im8g5jexf"
 
 [resource]
 script = ExtResource("2_sss51")
 grafia = "ll / y"
 nivel = "facil"
+carpeta_imagenes = "res://assets/Mundos/desierto/palabras"
 categorias = Array[ExtResource("1_fkjlm")]([SubResource("Resource_atce2"), SubResource("Resource_5e6w0")])
 metadata/_custom_type_script = "uid://dlttxgoacwjob"

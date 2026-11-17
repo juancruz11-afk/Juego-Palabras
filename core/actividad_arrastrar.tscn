@@ -58,6 +58,16 @@ mouse_filter = 2
 expand_mode = 1
 stretch_mode = 6
 
+[node name="Avatar" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 180.0
+offset_right = 325.0
+offset_bottom = 640.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
 [node name="PanelJuego" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 330.0
@@ -72,9 +82,9 @@ stretch_mode = 5
 [node name="ZonaTarjetas" type="HFlowContainer" parent="." unique_id=43853554]
 layout_mode = 0
 offset_left = 369.0
-offset_top = 120.0
+offset_top = 112.0
 offset_right = 1079.0
-offset_bottom = 330.0
+offset_bottom = 392.0
 theme_override_constants/h_separation = 10
 theme_override_constants/v_separation = 14
 alignment = 1
@@ -165,6 +175,9 @@ text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="TemporizadorPose" type="Timer" parent="."]
+one_shot = true
+
 [node name="Ventana" type="Control" parent="."]
 process_mode = 3
 visible = false
@@ -249,6 +262,7 @@ theme_override_styles/pressed = SubResource("estilo_boton_activo")
 theme_override_styles/focus = SubResource("estilo_boton")
 text = "Boton"
 
+[connection signal="timeout" from="TemporizadorPose" to="." method="_on_temporizador_pose_timeout"]
 [connection signal="pressed" from="BotonPausa" to="." method="_on_boton_pausa_pressed"]
 [connection signal="pressed" from="BotonSonido" to="." method="_on_boton_sonido_pressed"]
 [connection signal="pressed" from="Ventana/Cuadro/Contenido/Botones/BotonPrimario" to="." method="_on_boton_primario_pressed"]

@@ -3,5 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://d1jevhgr32fbk" path="res://core/actividad_arrastrar.tscn" id="1_5jxxk"]
 [ext_resource type="Resource" uid="uid://crvkle7pbc3i4" path="res://data/universo_final_facil_mix.tres" id="2_gmti5"]
 
+[ext_resource type="Texture2D" path="res://assets/Mundos/observatorio/Espacio.png" id="3_fondo"]
+
 [node name="ActividadArrastrar" unique_id=259137981 instance=ExtResource("1_5jxxk")]
+fondo = ExtResource("3_fondo")
 banco_palabras = ExtResource("2_gmti5")

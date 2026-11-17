@@ -3,5 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://d1jevhgr32fbk" path="res://core/actividad_arrastrar.tscn" id="1_qmli1"]
 [ext_resource type="Resource" uid="uid://biow5in7uysaq" path="res://data/volcan_retos_facil_gj.tres" id="2_jtq2q"]
 
+[ext_resource type="Texture2D" path="res://assets/Mundos/Volcan/Fondo.png" id="9_fondo"]
+
 [node name="ActividadArrastrar" unique_id=259137981 instance=ExtResource("1_qmli1")]
+fondo = ExtResource("9_fondo")
 banco_palabras = ExtResource("2_jtq2q")

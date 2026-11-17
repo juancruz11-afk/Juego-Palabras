@@ -17,6 +17,9 @@ var stars: int = 0
 var sonido_silenciado: bool = false
 var indice_carrusel: int = 0
 
+# Carpeta con las poses del avatar del jugador (pose1.png a pose5.png)
+var carpeta_avatar: String = "res://assets/avatar/predeterminado"
+
 # Mejor cantidad de estrellas obtenida en cada mundo completado
 var mundos_completados: Dictionary = {}
 
@@ -37,6 +40,12 @@ func set_sonido_silenciado(valor: bool) -> void:
 
 func set_player_name(new_name: String) -> void:
 	player_name = new_name
+
+func textura_avatar(pose: int) -> Texture2D:
+	var ruta := carpeta_avatar.path_join("pose%d.png" % pose)
+	if ResourceLoader.exists(ruta):
+		return load(ruta)
+	return null
 
 func mundo_desbloqueado(indice: int) -> bool:
 	if indice <= 0:
